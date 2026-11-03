@@ -1,0 +1,35 @@
+{
+  "seo": {
+    "titulo": "Contato e visitas | Escola Paraíso da Criança — Curitiba",
+    "descricao": "Agende uma visita à Escola Paraíso da Criança, no Capão Raso, Curitiba. Telefone e WhatsApp (41) 3347-7341."
+  },
+  "topo": {
+    "etiqueta": "Contato",
+    "titulo": "O próximo capítulo dessa história pode começar com uma visita.",
+    "texto": "Será um prazer apresentar nossos espaços, compartilhar nossa proposta pedagógica e conversar sobre a infância em que acreditamos."
+  },
+  "formulario": {
+    "titulo": "Agende sua visita",
+    "texto": "Preencha os campos e retornaremos para combinar o melhor dia e horário.",
+    "botao": "Quero conhecer o Paraíso",
+    "faixas": [
+      "6 meses a 1 ano",
+      "1 ano",
+      "2 anos",
+      "3 anos",
+      "4 anos",
+      "5 anos",
+      "Ainda não nasceu"
+    ],
+    "sucesso": "Recebemos sua mensagem! Em breve entraremos em contato para combinar a visita."
+  },
+  "titulo_lateral": "Fale com a gente",
+  "imagem": {
+    "src": "/img/fachada.jpg",
+    "alt": "Fachada da escola na Rua Des. Ernani G. Cartaxo, 564.",
+    "foco": "centro",
+    "inteira": false
+  },
+  "como_chegar": "Como chegar",
+  "como_chegar_texto": "Procure o muro vermelho, nº 564"
+}

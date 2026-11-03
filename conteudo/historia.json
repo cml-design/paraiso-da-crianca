@@ -1,0 +1,119 @@
+{
+  "seo": {
+    "titulo": "Nossa História | Escola Paraíso da Criança — Curitiba",
+    "descricao": "Desde 2002 dedicados à Primeira Infância. Conheça a trajetória, os valores e os 25 anos da Escola Paraíso da Criança, em Curitiba."
+  },
+  "topo": {
+    "etiqueta": "Nossa história",
+    "titulo": "Uma história que cresce junto com a infância.",
+    "texto": "Desde 2002, construímos um espaço dedicado a acolher, respeitar e inspirar as descobertas da Primeira Infância.",
+    "imagem": {
+      "src": "/img/fachada.jpg",
+      "alt": "Fachada da Escola Paraíso da Criança, com o muro vermelho e o logotipo.",
+      "foco": "esquerda",
+      "inteira": false
+    }
+  },
+  "trajetoria": {
+    "etiqueta": "Nossa trajetória",
+    "numero": "20+",
+    "numero_texto": "anos dedicados à Primeira Infância",
+    "titulo": "Há mais de duas décadas, uma semente foi plantada.",
+    "texto": "Essa história começou no alto de uma colina, com o sonho de uma menina que cresceu entre livros e cadernos. Inspirada pelo avô e pela mãe, Gil transformou o desejo de ensinar em realidade, e assim nasceu o Paraíso da Criança: um lugar para descobrir o mundo, construir memórias e crescer com amor.\n\nDesde então, a história do Paraíso é feita de encontros. De famílias que confiaram, de educadores que compartilharam conhecimentos e de crianças que preencheram nossos espaços com perguntas, brincadeiras e descobertas.\n\nSeguimos dedicados exclusivamente à Primeira Infância, buscando construir um ambiente em que o cuidado, o desenvolvimento e o respeito caminhem juntos.\n\nHoje, temos a alegria de receber uma segunda geração de famílias: filhos de quem um dia também viveu a infância aqui. Uma prova de confiança construída ao longo do tempo."
+  },
+  "valores": {
+    "etiqueta": "Nossos valores",
+    "titulo": "Uma trajetória sustentada por valores que permanecem essenciais.",
+    "lista": [
+      "Amor",
+      "União",
+      "Trabalho",
+      "Estudo",
+      "Honestidade"
+    ]
+  },
+  "mascote": {
+    "etiqueta": "Nosso mascote",
+    "titulo": "A cada passo, caminhamos juntos.",
+    "texto": "Assim como uma centopeia, que avança a cada passo com harmonia e união, o Paraíso sempre caminhou junto: crianças, famílias e educadores.\n\nNosso mascote simboliza essa jornada coletiva, em que cada movimento ganha força na união. Suas cores lembram a alegria da infância, a energia das nossas crianças e o compromisso com a natureza que nos cerca.",
+    "subtitulo": "Uma nova identidade, as mesmas raízes.",
+    "texto2": "Hoje, o Paraíso se moderniza com uma nova identidade visual, que reflete nossa evolução sem deixar para trás o que nos trouxe até aqui: a união, a alegria da infância e a natureza que nos ensina a crescer com raízes fortes e asas abertas.",
+    "imagem": {
+      "src": "/img/centopeia.png",
+      "alt": "Centopeia, mascote do Paraíso da Criança",
+      "foco": "centro",
+      "inteira": true
+    }
+  },
+  "inspira": {
+    "etiqueta": "O que nos inspira",
+    "titulo": "Acreditamos em uma infância que floresce com liberdade.",
+    "texto": "Uma infância com tempo para observar, espaço para brincar, oportunidades para explorar e relações que acolhem.\n\nÉ essa compreensão que orienta nosso cotidiano e dá sentido ao nosso compromisso com a educação.",
+    "frase": "Uma escola que respira natureza e inspira a infância.",
+    "imagem": {
+      "src": "/img/menina-lupa.jpg",
+      "alt": "Menina investiga uma planta com a lupa.",
+      "foco": "centro",
+      "inteira": false
+    }
+  },
+  "aniversario": {
+    "etiqueta": "2027",
+    "titulo": "25 anos de histórias. Infinitas descobertas pela frente.",
+    "texto": "Em 2027, celebramos 25 anos de dedicação à Primeira Infância.\n\nMais do que recordar o caminho percorrido, celebramos as relações, as experiências e tudo o que continuamos construindo juntos.",
+    "video": {
+      "arquivo": "/videos/linha-do-tempo.mp4",
+      "youtube": "",
+      "capa": "/img/video-capa.jpg"
+    },
+    "video_legenda": "Há mais de duas décadas, uma semente foi plantada.",
+    "video_sublegenda": "Assista à nossa história · 1min37",
+    "marcos": [
+      {
+        "ano": "2003",
+        "titulo": "O primeiro ano letivo",
+        "texto": "Começam as atividades pedagógicas do Paraíso. O muro colorido marcou os primeiros anos da escola.",
+        "imagem": {
+          "src": "/img/muro-antigo.jpg",
+          "alt": "Antigo muro da escola, pintado com as letras coloridas de Paraíso da Criança.",
+          "foco": "centro",
+          "inteira": false
+        }
+      },
+      {
+        "ano": "Desde 2003",
+        "titulo": "Nossa primeira marca",
+        "texto": "Desde a abertura, a primeira centopeia do Paraíso já trazia as cores, a alegria e a ideia de caminhar juntos que nos acompanham até hoje.",
+        "imagem": {
+          "src": "/img/logo-antigo.jpg",
+          "alt": "Primeiro logotipo do Paraíso da Criança: uma centopeia colorida com crianças e as letras do nome em cores variadas.",
+          "foco": "centro",
+          "inteira": true
+        }
+      },
+      {
+        "ano": "Hoje",
+        "titulo": "Nova identidade, as mesmas raízes",
+        "texto": "Uma escola que se renova sem deixar para trás o que a trouxe até aqui.",
+        "imagem": {
+          "src": "/img/fachada.jpg",
+          "alt": "Fachada atual da Escola Paraíso da Criança.",
+          "foco": "centro",
+          "inteira": false
+        }
+      }
+    ]
+  },
+  "chamada": {
+    "frase": "Faça parte dessa história",
+    "titulo": "O próximo capítulo pode começar com uma visita.",
+    "texto": "Venha conhecer o Paraíso de perto e conversar com a nossa equipe.",
+    "botao": "Agende uma visita",
+    "imagem": {
+      "src": "/img/criancas-roda.jpg",
+      "alt": "Crianças deitadas em roda sobre a grama.",
+      "foco": "esquerda",
+      "inteira": false
+    }
+  }
+}

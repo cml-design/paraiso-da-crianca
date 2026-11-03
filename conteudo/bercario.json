@@ -1,0 +1,107 @@
+{
+  "seo": {
+    "titulo": "Berçário em Curitiba | Escola Paraíso da Criança",
+    "descricao": "Berçário em Curitiba com cuidado, vínculo e experiências sensoriais em contato com a natureza. Conheça o Berçário do Paraíso da Criança, no Capão Raso."
+  },
+  "topo": {
+    "etiqueta": "Berçário",
+    "titulo": "Um universo de descobertas começa nos pequenos gestos.",
+    "texto": "No Berçário do Paraíso, cada olhar, movimento e interação é acolhido como parte de uma jornada singular de desenvolvimento.",
+    "imagem": {
+      "src": "/img/bebe-violao.jpg",
+      "alt": "Bebê explora as cordas de um violão.",
+      "foco": "direita",
+      "inteira": false
+    }
+  },
+  "cuidar": {
+    "etiqueta": "Cuidar também é educar",
+    "titulo": "O cuidado está presente em cada momento do cotidiano.",
+    "texto": "Acolher, alimentar, higienizar, proporcionar descanso, brincar e interagir são experiências que fazem parte de uma relação de confiança e respeito.\n\nReconhecemos os ritmos individuais dos bebês e valorizamos uma rotina que integra bem-estar, vínculos afetivos e oportunidades de descoberta."
+  },
+  "sentidos": {
+    "etiqueta": "Descobrir com todos os sentidos",
+    "titulo": "Antes das palavras, o mundo já desperta perguntas.",
+    "texto": "Texturas, sons, movimentos, cores e elementos naturais convidam os bebês a experimentar o ambiente e construir as primeiras relações com o mundo.\n\nAs propostas são planejadas de acordo com as possibilidades e necessidades de cada etapa do desenvolvimento. A musicalização infantil, os quintais brincantes e as oficinas recreativas fazem parte do cotidiano desde o Berçário.",
+    "imagem": {
+      "src": "",
+      "alt": "Bebê em exploração sensorial.",
+      "foco": "centro",
+      "inteira": false
+    }
+  },
+  "natureza": {
+    "etiqueta": "Natureza desde os primeiros encontros",
+    "titulo": "A natureza também faz parte das primeiras descobertas.",
+    "texto": "O contato com ambientes naturais amplia as possibilidades de observação, percepção e exploração.\n\nCom acompanhamento atento dos educadores, os bebês vivenciam experiências que respeitam seus ritmos e despertam a curiosidade.",
+    "imagem": {
+      "src": "",
+      "alt": "Bebê em ambiente natural.",
+      "foco": "centro",
+      "inteira": false
+    }
+  },
+  "informacoes": {
+    "etiqueta": "No dia a dia",
+    "titulo": "Informações sobre o Berçário",
+    "texto": "O que você precisa saber para planejar a rotina do seu filho(a) com tranquilidade.",
+    "periodos": [
+      {
+        "nome": "Meio período — manhã",
+        "detalhe": "7h30 às 11h30 · café da manhã e almoço inclusos"
+      },
+      {
+        "nome": "Meio período — tarde",
+        "detalhe": "13h às 17h"
+      },
+      {
+        "nome": "Intermediário — manhã",
+        "detalhe": "10h30 às 17h · almoço incluso"
+      },
+      {
+        "nome": "Intermediário — tarde",
+        "detalhe": "13h às 18h30 · sopinha inclusa"
+      },
+      {
+        "nome": "Integral",
+        "detalhe": "7h30 às 18h30 · café da manhã, almoço e sopinha inclusos"
+      }
+    ],
+    "observacao": "Lanche da tarde contratado da escola ou trazido de casa, seguindo o cardápio escolar.",
+    "cartoes": [
+      {
+        "titulo": "Alimentação",
+        "texto": "Acompanhamento nutricional, proporcionando uma alimentação saudável e equilibrada."
+      },
+      {
+        "titulo": "Saúde e bem-estar",
+        "texto": "Convênio com a Centauro para emergências médicas e com o Hospital Pequeno Príncipe para consultas on-line por meio do TytoPro, dispositivo que permite realizar exames na escola e transmitir os dados em tempo real ao pediatra."
+      },
+      {
+        "titulo": "Ambientes",
+        "texto": "Espaços acolhedores, seguros, repletos de natureza e adaptados a cada faixa etária."
+      },
+      {
+        "titulo": "Faixa etária",
+        "texto": "Atendemos bebês a partir de 6 meses. Após o Berçário, a criança segue para os grupos de Maternal 1 e Maternal 2."
+      }
+    ]
+  },
+  "familia": {
+    "etiqueta": "Escola e família",
+    "titulo": "Uma relação construída com confiança.",
+    "texto": "A parceria entre escola e família é fundamental para acolher as particularidades de cada bebê.\n\nValorizamos a escuta, o diálogo e a comunicação transparente, construindo juntos uma relação de cuidado e confiança."
+  },
+  "chamada": {
+    "frase": "Venha nos visitar",
+    "titulo": "Venha conhecer nosso Berçário.",
+    "texto": "Será um prazer apresentar os espaços e conversar sobre a rotina e o acolhimento dos bebês.",
+    "botao": "Agende uma visita",
+    "imagem": {
+      "src": "/img/bebe-violao.jpg",
+      "alt": "Bebê toca as cordas de um violão.",
+      "foco": "direita",
+      "inteira": false
+    }
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "seo": {
+    "titulo": "Escola Paraíso da Criança | Educação Infantil e Berçário em Curitiba",
+    "descricao": "Escola de Educação Infantil e Berçário em Curitiba, no Capão Raso. Natureza que inspira a infância, com mais de duas décadas dedicadas à Primeira Infância."
+  },
+  "banner": {
+    "frase": "Educação Infantil e Berçário em Curitiba",
+    "titulo": "Natureza que inspira a infância.",
+    "texto": "Um lugar para descobrir o mundo, viver a liberdade de brincar e crescer cercado de experiências que fazem sentido.",
+    "botao1": "Conheça o Paraíso",
+    "botao2": "Agende uma visita",
+    "imagem": {
+      "src": "/img/criancas-lupa.jpg",
+      "alt": "Duas crianças agachadas na grama observam uma planta com uma lupa.",
+      "foco": "topo",
+      "inteira": false
+    },
+    "video": {
+      "arquivo": "",
+      "arquivo_celular": ""
+    }
+  },
+  "manifesto": {
+    "etiqueta": "Nosso manifesto",
+    "titulo": "A infância acontece nas **pequenas grandes** descobertas.",
+    "texto": "Acreditamos que a infância precisa de tempo para observar, liberdade para imaginar, espaço para descobrir e gente para se conectar.\n\nÉ no contato com a natureza, nas brincadeiras espontâneas e nas relações construídas todos os dias que a criança encontra possibilidades para explorar o mundo.\n\nNo Paraíso, acolhemos cada descoberta com respeito, sensibilidade e intenção pedagógica. Porque crescer também é experimentar, perguntar, criar e se encantar.",
+    "selo": "O Paraíso é assim…",
+    "imagem": {
+      "src": "/img/menina-lupa.jpg",
+      "alt": "Menina observa uma pequena planta com a lupa nas mãos.",
+      "foco": "centro",
+      "inteira": false
+    }
+  },
+  "caminhos": {
+    "etiqueta": "Nossos caminhos",
+    "titulo": "Cada fase da infância tem seu tempo.",
+    "texto": "Do Berçário ao Nível 5, acompanhamos a criança em uma jornada contínua de cuidado, vínculo e descoberta.",
+    "bercario": {
+      "rotulo": "Berçário",
+      "titulo": "Os primeiros encontros com o mundo.",
+      "texto": "No Berçário, o cuidado e a descoberta caminham juntos. Cada gesto, movimento e interação faz parte de uma experiência acolhedora, que respeita os ritmos e as necessidades de cada bebê.",
+      "botao": "Conheça nosso Berçário",
+      "imagem": {
+        "src": "/img/bebe-violao.jpg",
+        "alt": "Bebê toca as cordas de um violão no Berçário.",
+        "foco": "direita",
+        "inteira": false
+      }
+    },
+    "educacao": {
+      "rotulo": "Educação Infantil",
+      "titulo": "Um mundo inteiro para explorar.",
+      "texto": "Na Educação Infantil, a curiosidade abre caminhos para investigar, criar, conviver e construir conhecimentos. O brincar e as experiências dão sentido às descobertas de cada dia.",
+      "botao": "Descubra a Educação Infantil",
+      "imagem": {
+        "src": "/img/menino-pintando.jpg",
+        "alt": "Menino sentado na grama, com tinta nos pés e nas mãos, segura um pincel.",
+        "foco": "centro",
+        "inteira": false
+      }
+    }
+  },
+  "territorios": {
+    "etiqueta": "Territórios de aprendizagem",
+    "titulo": "O mundo também é uma sala de aula.",
+    "texto": "Os ambientes do Paraíso são territórios de encontros, experiências e possibilidades.\n\nNa grama, na terra, entre árvores, materiais e brincadeiras, a criança encontra oportunidades para investigar, movimentar-se, imaginar e construir novas relações com o mundo.",
+    "frase": "Aqui, cada espaço tem potencial para despertar uma descoberta.",
+    "botao": "Explore nossos territórios",
+    "imagens": [
+      {
+        "src": "/img/criancas-roda.jpg",
+        "alt": "Crianças deitadas em roda sobre a grama, sorrindo.",
+        "foco": "esquerda",
+        "inteira": false
+      },
+      {
+        "src": "",
+        "alt": "Ambiente externo da escola.",
+        "foco": "centro",
+        "inteira": false
+      },
+      {
+        "src": "",
+        "alt": "Mãos de criança em experiência sensorial.",
+        "foco": "centro",
+        "inteira": false
+      },
+      {
+        "src": "",
+        "alt": "Espaço de aprendizagem.",
+        "foco": "centro",
+        "inteira": false
+      },
+      {
+        "src": "",
+        "alt": "Crianças em brincadeira livre.",
+        "foco": "centro",
+        "inteira": false
+      }
+    ]
+  },
+  "proposta": {
+    "etiqueta": "Proposta pedagógica",
+    "titulo": "Aprender é viver a experiência.",
+    "texto": "Nossa proposta pedagógica reconhece a criança como protagonista de suas descobertas.\n\nValorizamos a curiosidade, a investigação, as relações e as diferentes formas de expressão, construindo experiências que integram o brincar, o conhecimento e o desenvolvimento integral.\n\nA natureza participa dessa jornada como fonte permanente de inspiração, pesquisa e encantamento.",
+    "botao": "Conheça nossa proposta",
+    "imagem": {
+      "src": "/img/menino-lupa.jpg",
+      "alt": "Menino agachado na grama observa com curiosidade.",
+      "foco": "topo",
+      "inteira": false
+    }
+  },
+  "historia": {
+    "etiqueta": "Nossa história",
+    "ano": "2002",
+    "ano_rotulo": "Desde",
+    "titulo": "Uma história construída com infância, afeto e dedicação.",
+    "texto": "Fundada em 2002, a Escola Paraíso da Criança dedica sua trajetória à Primeira Infância.\n\nSão anos de experiências, vínculos e histórias compartilhadas com crianças, famílias e educadores.\n\nAo longo desse caminho, seguimos acreditando na educação como uma construção coletiva, feita com conhecimento, responsabilidade, sensibilidade e respeito à infância.\n\nEm 2027, celebramos 25 anos dessa história, com a mesma essência que nos inspira desde o início.",
+    "selo_numero": "25",
+    "selo_texto": "anos em 2027",
+    "botao": "Conheça nossa história",
+    "imagem": {
+      "src": "/img/fachada.jpg",
+      "alt": "Fachada da Escola Paraíso da Criança, com o muro vermelho e o logotipo.",
+      "foco": "esquerda",
+      "inteira": false
+    },
+    "imagem_detalhe": {
+      "src": "/img/muro-antigo.jpg",
+      "alt": "Antigo muro da escola, pintado com as letras coloridas de Paraíso da Criança.",
+      "foco": "centro",
+      "inteira": false
+    }
+  },
+  "chamada": {
+    "frase": "Vem para o Paraíso",
+    "titulo": "Há descobertas que precisam ser vividas de perto.",
+    "texto": "Venha conhecer os espaços, sentir a natureza e descobrir como a infância acontece no Paraíso.",
+    "botao": "Agende uma visita",
+    "imagem": {
+      "src": "/img/criancas-roda.jpg",
+      "alt": "Crianças sorrindo deitadas na grama.",
+      "foco": "direita",
+      "inteira": false
+    }
+  }
+}

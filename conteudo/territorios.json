@@ -1,0 +1,142 @@
+{
+  "seo": {
+    "titulo": "Territórios de aprendizagem | Escola Paraíso da Criança",
+    "descricao": "Áreas verdes, quintais e ambientes pensados para investigar, brincar e conviver. Conheça os territórios de aprendizagem do Paraíso da Criança, em Curitiba."
+  },
+  "topo": {
+    "etiqueta": "Territórios",
+    "titulo": "Territórios que convidam a descobrir.",
+    "texto": "Cada espaço guarda possibilidades. Cada caminho pode despertar uma pergunta. Cada encontro com a natureza pode se transformar em uma experiência de aprendizagem.",
+    "imagem": {
+      "src": "/img/criancas-roda.jpg",
+      "alt": "Crianças sobre o gramado da escola.",
+      "foco": "esquerda",
+      "inteira": false
+    }
+  },
+  "educam": {
+    "etiqueta": "Os espaços também educam",
+    "titulo": "O ambiente participa ativamente das experiências da criança.",
+    "texto": "Os espaços são pensados para favorecer encontros, movimentos, investigações e brincadeiras, respeitando diferentes interesses e possibilidades.\n\nA natureza integra essa experiência, convidando a criança a observar, explorar e construir relações com o mundo. Ambientes acolhedores, seguros, repletos de natureza e adaptados a cada faixa etária."
+  },
+  "espacos": {
+    "etiqueta": "Nossos espaços",
+    "titulo": "Cada turma tem o seu lugar.",
+    "texto": "Ambientes adaptados a cada faixa etária, com nomes que vêm da natureza.",
+    "lista": [
+      {
+        "nome": "Nuvem",
+        "faixa": "[Faixa etária]",
+        "texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "cor": "azul"
+      },
+      {
+        "nome": "Sol",
+        "faixa": "[Faixa etária]",
+        "texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "cor": "laranja"
+      },
+      {
+        "nome": "Lago",
+        "faixa": "[Faixa etária]",
+        "texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "cor": "verde"
+      },
+      {
+        "nome": "Lua",
+        "faixa": "[Faixa etária]",
+        "texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "cor": "roxo"
+      },
+      {
+        "nome": "Estrela",
+        "faixa": "[Faixa etária]",
+        "texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "cor": "amarelo"
+      }
+    ]
+  },
+  "galeria": {
+    "etiqueta": "Galeria",
+    "titulo": "Um passeio pelos nossos territórios.",
+    "itens": [
+      {
+        "titulo": "Natureza e áreas verdes",
+        "texto": "Grama para correr, terra para tocar, árvores para observar de perto.",
+        "imagem": {
+          "src": "/img/criancas-lupa.jpg",
+          "alt": "Crianças no gramado investigando uma planta.",
+          "foco": "base",
+          "inteira": false
+        }
+      },
+      {
+        "titulo": "Ambientes de investigação",
+        "texto": "Materiais, perguntas e tempo para descobrir.",
+        "imagem": {
+          "src": "",
+          "alt": "Ambiente de investigação.",
+          "foco": "centro",
+          "inteira": false
+        }
+      },
+      {
+        "titulo": "Espaços de brincar",
+        "texto": "Quintais e cantos que convidam ao movimento e à imaginação.",
+        "imagem": {
+          "src": "",
+          "alt": "Espaço de brincar.",
+          "foco": "centro",
+          "inteira": false
+        }
+      },
+      {
+        "titulo": "Experiências artísticas",
+        "texto": "Tinta, texturas e cores que viram expressão.",
+        "imagem": {
+          "src": "/img/menino-pintando.jpg",
+          "alt": "Criança com tinta nas mãos e nos pés, sobre o gramado.",
+          "foco": "base",
+          "inteira": false
+        }
+      },
+      {
+        "titulo": "Ambientes de acolhimento",
+        "texto": "Espaços adaptados a cada faixa etária, pensados para o bem-estar.",
+        "imagem": {
+          "src": "",
+          "alt": "Ambiente de acolhimento.",
+          "foco": "centro",
+          "inteira": false
+        }
+      },
+      {
+        "titulo": "Espaços de convivência",
+        "texto": "Lugares de encontro entre crianças, educadores e famílias.",
+        "imagem": {
+          "src": "",
+          "alt": "Espaço de convivência.",
+          "foco": "centro",
+          "inteira": false
+        }
+      }
+    ]
+  },
+  "natureza": {
+    "etiqueta": "Natureza como experiência",
+    "titulo": "Pés na grama, mãos na terra, olhos atentos ao mundo.",
+    "texto": "A infância encontra na natureza possibilidades que não cabem em uma única resposta.\n\nObservar uma folha, sentir a textura da terra, acompanhar uma transformação ou inventar uma brincadeira são experiências que aproximam a criança do ambiente e ampliam sua curiosidade.\n\nPor aqui, pisar na terra, correr na grama e colher frutas do pé fazem parte da simplicidade do cotidiano."
+  },
+  "chamada": {
+    "frase": "Pés na grama",
+    "titulo": "Venha explorar nossos territórios.",
+    "texto": "Agende uma visita e conheça os espaços onde a infância acontece.",
+    "botao": "Agende uma visita",
+    "imagem": {
+      "src": "/img/criancas-roda.jpg",
+      "alt": "Crianças sorrindo deitadas na grama.",
+      "foco": "centro",
+      "inteira": false
+    }
+  }
+}

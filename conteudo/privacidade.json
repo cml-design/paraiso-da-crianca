@@ -1,0 +1,58 @@
+{
+  "seo": {
+    "titulo": "Política de Privacidade | Escola Paraíso da Criança",
+    "descricao": "Como a Escola Paraíso da Criança coleta, usa e protege os dados pessoais enviados pelo site, conforme a LGPD."
+  },
+  "titulo": "Política de Privacidade",
+  "introducao": "A confiança das famílias é construída também no cuidado com as informações que elas nos confiam. Esta política explica, de forma simples, quais dados pessoais tratamos por meio deste site, para quê, e quais são os seus direitos, conforme a Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018 – LGPD).",
+  "secoes": [
+    {
+      "titulo": "1. Quem é responsável pelos seus dados",
+      "texto": "O controlador dos dados pessoais tratados neste site é **{razao_social}**, inscrita no CNPJ sob o nº {cnpj}, com sede na {endereco}, que atua sob o nome Escola Paraíso da Criança."
+    },
+    {
+      "titulo": "2. Quais dados coletamos",
+      "texto": "**Formulário de agendamento de visita:** nome do responsável, e-mail, WhatsApp, idade ou faixa etária da criança, interesse (Berçário ou Educação Infantil) e, se você quiser informar, o nome da criança e uma mensagem.\n\n**Contato direto:** quando você fala conosco por WhatsApp, telefone, e-mail ou Instagram, recebemos as informações que você decidir compartilhar nessa conversa.\n\n**Dados técnicos de navegação:** ao acessar o site, seu navegador se conecta a serviços que fornecem as fontes tipográficas (Google Fonts e Adobe Fonts) e ao provedor de hospedagem (GitHub), que podem registrar dados técnicos como endereço IP, tipo de navegador e data e hora de acesso. Este site não utiliza cookies de publicidade nem ferramentas de rastreamento de comportamento.\n\nNão solicitamos pelo site dados pessoais sensíveis, como informações de saúde, religião ou origem racial ou étnica."
+    },
+    {
+      "titulo": "3. Para que usamos os dados",
+      "texto": "- Responder ao seu contato e agendar a visita à escola;\n- Enviar as informações sobre matrícula, turmas e períodos que você solicitou;\n- Manter o funcionamento e a segurança do site;\n- Cumprir obrigações legais ou atender a determinações de autoridades.\n\nNão vendemos dados pessoais e não os utilizamos para publicidade de terceiros."
+    },
+    {
+      "titulo": "4. Bases legais",
+      "texto": "Tratamos os dados com fundamento nas hipóteses previstas no art. 7º da LGPD, especialmente: o **consentimento** que você nos dá ao enviar o formulário (inciso I); a realização de **procedimentos preliminares** relacionados a um possível contrato de prestação de serviços educacionais, a seu pedido (inciso V); o cumprimento de **obrigação legal** (inciso II); e o **legítimo interesse** na segurança e no funcionamento do site (inciso IX)."
+    },
+    {
+      "titulo": "5. Dados de crianças",
+      "texto": "O formulário deve ser preenchido exclusivamente por pais ou responsáveis legais. Pedimos apenas as informações mínimas necessárias para orientar a visita, como a idade da criança; o nome da criança é opcional. Todo tratamento de dados de crianças é realizado no seu **melhor interesse**, conforme o art. 14 da LGPD."
+    },
+    {
+      "titulo": "6. Com quem compartilhamos",
+      "texto": "Os dados podem ser compartilhados somente com:\n\n- Fornecedores que nos ajudam a operar o site e a comunicação, como serviços de hospedagem, de envio de formulários e de e-mail, que tratam os dados apenas conforme nossas instruções;\n- O WhatsApp (Meta), quando você escolhe falar conosco por esse canal, sujeito também à política de privacidade da plataforma;\n- Autoridades públicas, quando houver obrigação legal ou ordem judicial.\n\nAlguns desses fornecedores podem armazenar dados em servidores fora do Brasil. Nesses casos, adotamos fornecedores que oferecem garantias adequadas de proteção, conforme o art. 33 da LGPD."
+    },
+    {
+      "titulo": "7. Por quanto tempo guardamos",
+      "texto": "Mantemos os dados pelo tempo necessário para atender à sua solicitação. Contatos que não resultarem em matrícula são excluídos em até {prazo_guarda} após o último contato, salvo se a lei exigir prazo maior. Se houver matrícula, os dados passam a ser tratados conforme o contrato de prestação de serviços educacionais."
+    },
+    {
+      "titulo": "8. Como protegemos",
+      "texto": "Adotamos medidas técnicas e administrativas razoáveis para proteger os dados contra acessos não autorizados, perda ou alteração, e limitamos o acesso às pessoas da equipe que precisam dessas informações para atender você."
+    },
+    {
+      "titulo": "9. Imagens das crianças",
+      "texto": "Fotografias e vídeos de crianças são publicados no site e nas redes sociais somente com autorização de uso de imagem assinada pelos responsáveis. A autorização pode ser revogada a qualquer momento, e a imagem será retirada dos nossos canais."
+    },
+    {
+      "titulo": "10. Seus direitos",
+      "texto": "Como titular, você pode solicitar a qualquer momento, nos termos do art. 18 da LGPD:\n\n- a confirmação de que tratamos seus dados e o acesso a eles;\n- a correção de dados incompletos, inexatos ou desatualizados;\n- a anonimização, o bloqueio ou a eliminação de dados desnecessários ou excessivos;\n- a portabilidade dos dados a outro fornecedor;\n- a eliminação dos dados tratados com base no consentimento;\n- informações sobre com quem compartilhamos seus dados;\n- a revogação do consentimento.\n\nPara exercer esses direitos, escreva para {email}. Responderemos no prazo previsto em lei. Você também pode apresentar reclamação à Autoridade Nacional de Proteção de Dados (ANPD)."
+    },
+    {
+      "titulo": "11. Canal de privacidade",
+      "texto": "Dúvidas sobre esta política ou sobre o tratamento dos seus dados podem ser enviadas para {email}{encarregado}."
+    },
+    {
+      "titulo": "12. Alterações desta política",
+      "texto": "Podemos atualizar esta política para refletir mudanças no site ou na legislação. A versão vigente estará sempre disponível nesta página, com a data da última atualização ({atualizada_em})."
+    }
+  ]
+}

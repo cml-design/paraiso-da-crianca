@@ -1,0 +1,116 @@
+{
+  "seo": {
+    "titulo": "Proposta Pedagógica | Escola Paraíso da Criança — Curitiba",
+    "descricao": "Linha sociointeracionista inspirada na abordagem de Reggio Emilia, com a natureza como inspiração e a criança como protagonista. Desenvolvimento integral na Primeira Infância."
+  },
+  "topo": {
+    "etiqueta": "Proposta pedagógica",
+    "titulo": "Uma pedagogia que reconhece a potência da infância.",
+    "texto": "Acreditamos que aprender envolve experimentar, investigar, conviver e atribuir sentido às experiências.",
+    "imagem": {
+      "src": "/img/menino-lupa.jpg",
+      "alt": "Menino observa o jardim com atenção.",
+      "foco": "topo",
+      "inteira": false
+    }
+  },
+  "compreender": {
+    "etiqueta": "Nossa maneira de compreender a infância",
+    "titulo": "A criança como sujeito ativo de suas descobertas.",
+    "texto": "Reconhecemos a criança como sujeito ativo, capaz de construir conhecimentos, estabelecer relações e expressar diferentes maneiras de compreender o mundo.\n\nNossa proposta valoriza a escuta, o brincar, a investigação e a construção de experiências significativas.\n\nOs educadores acompanham esse percurso com intencionalidade pedagógica, sensibilidade e respeito à individualidade."
+  },
+  "pilares": {
+    "etiqueta": "Os pilares da nossa prática",
+    "titulo": "Cinco pilares que orientam o cotidiano.",
+    "lista": [
+      {
+        "titulo": "Protagonismo infantil",
+        "texto": "A criança participa ativamente das experiências e encontra oportunidades para fazer escolhas, investigar e expressar ideias.",
+        "cor": "vermelho"
+      },
+      {
+        "titulo": "Natureza como inspiração",
+        "texto": "O contato com o ambiente natural amplia as possibilidades de observação, exploração e aprendizagem.",
+        "cor": "verde"
+      },
+      {
+        "titulo": "Brincar como linguagem",
+        "texto": "A brincadeira é reconhecida como uma forma essencial de expressão, interação e construção de conhecimentos.",
+        "cor": "laranja"
+      },
+      {
+        "titulo": "Relações e vínculos",
+        "texto": "As relações entre crianças, educadores e famílias fortalecem o sentimento de pertencimento e a construção coletiva do cotidiano.",
+        "cor": "azul"
+      },
+      {
+        "titulo": "Experiências com significado",
+        "texto": "As propostas pedagógicas valorizam diferentes linguagens, materiais e contextos, conectando a aprendizagem às vivências da infância.",
+        "cor": "amarelo"
+      }
+    ]
+  },
+  "direitos": {
+    "etiqueta": "Direitos de aprendizagem",
+    "titulo": "Um cotidiano rico em experiências e possibilidades.",
+    "texto": "Nossa prática pedagógica é pautada nos direitos da criança de:",
+    "lista": [
+      "Brincar",
+      "Conviver",
+      "Explorar",
+      "Expressar-se",
+      "Participar",
+      "Conhecer-se"
+    ]
+  },
+  "intencionalidade": {
+    "etiqueta": "Conhecimento e intencionalidade",
+    "titulo": "Por trás de cada experiência, existe um olhar pedagógico.",
+    "texto": "As vivências são acompanhadas por educadores que observam, escutam, planejam e organizam possibilidades de aprendizagem.\n\nA intencionalidade pedagógica permite reconhecer interesses, acompanhar processos e ampliar experiências, respeitando as singularidades de cada criança."
+  },
+  "curriculo": {
+    "etiqueta": "Currículo e abordagens",
+    "titulo": "Aprender nos territórios e quintais da escola.",
+    "texto": "Seguimos uma linha sociointeracionista, inspirada na abordagem de Reggio Emilia, que valoriza a cultura maker, as metodologias ativas, a educação socioemocional e a criança como protagonista do próprio aprendizado.\n\nNa prática, isso significa propostas em que professores e crianças trilham juntos os territórios e quintais da escola, percebendo que a aprendizagem pulsa no brincar, na descoberta, na interação e no construir.\n\nOs projetos envolvem crianças, professores e famílias com criatividade e entusiasmo, convidando as turmas a registrar suas marcas e histórias no processo de aprendizagem.",
+    "cartoes": [
+      {
+        "titulo": "Portfólio",
+        "texto": "Berçário, Maternal 1 e Maternal 2."
+      },
+      {
+        "titulo": "Material didático",
+        "texto": "Níveis 3, 4 e 5, editora FTD."
+      }
+    ],
+    "imagem1": {
+      "src": "",
+      "alt": "Registro de projeto pedagógico.",
+      "foco": "centro",
+      "inteira": false
+    },
+    "imagem2": {
+      "src": "",
+      "alt": "Experiência de cultura maker.",
+      "foco": "centro",
+      "inteira": false
+    },
+    "imagem3": {
+      "src": "",
+      "alt": "Educadora conversa com crianças.",
+      "foco": "centro",
+      "inteira": false
+    }
+  },
+  "chamada": {
+    "frase": "Na prática",
+    "titulo": "Descubra nossa proposta na prática.",
+    "texto": "Agende uma visita e veja como as experiências ganham vida no cotidiano do Paraíso.",
+    "botao": "Agende uma visita",
+    "imagem": {
+      "src": "/img/criancas-roda.jpg",
+      "alt": "Crianças sorrindo deitadas na grama.",
+      "foco": "direita",
+      "inteira": false
+    }
+  }
+}

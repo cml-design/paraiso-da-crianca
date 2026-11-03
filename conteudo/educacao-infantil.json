@@ -1,0 +1,174 @@
+{
+  "seo": {
+    "titulo": "Educação Infantil em Curitiba | Escola Paraíso da Criança",
+    "descricao": "Escola de Educação Infantil em Curitiba: brincar, investigar, criar e conviver em contato com a natureza. Do Maternal ao Nível 5 no Paraíso da Criança."
+  },
+  "topo": {
+    "etiqueta": "Educação Infantil",
+    "titulo": "A curiosidade abre caminhos. A infância faz o resto.",
+    "texto": "Na Educação Infantil, cada pergunta pode se transformar em investigação, cada brincadeira em descoberta e cada experiência em uma nova maneira de compreender o mundo.",
+    "imagem": {
+      "src": "/img/criancas-lupa.jpg",
+      "alt": "Crianças investigam uma planta com uma lupa.",
+      "foco": "esquerda",
+      "inteira": false
+    }
+  },
+  "protagonista": {
+    "etiqueta": "A criança como protagonista",
+    "titulo": "Aprender começa com a vontade de descobrir.",
+    "texto": "A criança observa, pergunta, experimenta, cria hipóteses e constrói conhecimentos nas relações com o ambiente, com outras crianças e com os educadores.\n\nNossa prática pedagógica reconhece essa potência e organiza experiências que respeitam a individualidade e valorizam diferentes formas de aprender.",
+    "imagem": {
+      "src": "/img/menino-lupa.jpg",
+      "alt": "Menino agachado na grama observa com curiosidade.",
+      "foco": "topo",
+      "inteira": false
+    }
+  },
+  "brincar": {
+    "etiqueta": "Brincar é coisa séria",
+    "titulo": "É brincando que a infância encontra suas possibilidades.",
+    "texto": "O brincar está no centro das experiências da Educação Infantil. Nas brincadeiras, a criança imagina, negocia, movimenta-se, expressa sentimentos, constrói relações e experimenta diferentes maneiras de participar do mundo."
+  },
+  "cotidiano": {
+    "etiqueta": "No cotidiano",
+    "titulo": "Investigar, criar e conviver.",
+    "cartoes": [
+      {
+        "titulo": "Investigar",
+        "texto": "Observar fenômenos, explorar materiais, levantar perguntas e construir descobertas.",
+        "cor": "verde",
+        "imagem": {
+          "src": "/img/menino-lupa.jpg",
+          "alt": "Menino observa atentamente o chão do jardim.",
+          "foco": "topo",
+          "inteira": false
+        }
+      },
+      {
+        "titulo": "Criar",
+        "texto": "Experimentar linguagens artísticas, imaginar possibilidades e expressar ideias.",
+        "cor": "laranja",
+        "imagem": {
+          "src": "/img/menino-pintando.jpg",
+          "alt": "Criança pintando sobre um tecido na grama.",
+          "foco": "topo",
+          "inteira": false
+        }
+      },
+      {
+        "titulo": "Conviver",
+        "texto": "Construir vínculos, compartilhar experiências e participar da vida coletiva.",
+        "cor": "azul",
+        "imagem": {
+          "src": "/img/criancas-roda.jpg",
+          "alt": "Crianças juntas, deitadas em roda na grama.",
+          "foco": "centro",
+          "inteira": false
+        }
+      }
+    ]
+  },
+  "aulas": {
+    "etiqueta": "Experiências que ampliam horizontes",
+    "titulo": "Aulas especiais integradas ao currículo.",
+    "texto": "As aulas especiais integram a proposta educacional do Berçário ao Nível 5, nos turnos específicos, respeitando a organização de cada turma. Elas estimulam a criatividade, a autonomia e a convivência, contribuindo para o desenvolvimento integral da criança.",
+    "turnos": [
+      {
+        "nome": "Manhã",
+        "atividades": [
+          {
+            "nome": "Musicalização Infantil",
+            "turmas": "Berçário ao N5"
+          },
+          {
+            "nome": "Quintais Brincantes",
+            "turmas": "Berçário ao N5"
+          },
+          {
+            "nome": "Oficinas Recreativas",
+            "turmas": "Berçário ao N5"
+          },
+          {
+            "nome": "Yoga",
+            "turmas": "N3, N4 e N5"
+          }
+        ]
+      },
+      {
+        "nome": "Tarde",
+        "atividades": [
+          {
+            "nome": "Corpo e Movimento",
+            "turmas": "M1 e M2"
+          },
+          {
+            "nome": "Ballet",
+            "turmas": "N3, N4 e N5"
+          },
+          {
+            "nome": "Capoeira",
+            "turmas": "N3, N4 e N5 · M2 no 2º semestre"
+          },
+          {
+            "nome": "Inglês",
+            "turmas": "N3, N4 e N5 · 2x na semana"
+          },
+          {
+            "nome": "Robótica",
+            "turmas": "N4 e N5"
+          },
+          {
+            "nome": "Oficinas especiais",
+            "turmas": "Todas as turmas · arte circense, contação de histórias, teatro e outras"
+          }
+        ]
+      },
+      {
+        "nome": "Integral",
+        "atividades": [
+          {
+            "nome": "Educação Socioambiental",
+            "turmas": "Berçário ao N5"
+          },
+          {
+            "nome": "Cultura Maker",
+            "turmas": "Berçário ao N5"
+          },
+          {
+            "nome": "Educação Socioemocional",
+            "turmas": "Berçário ao N5"
+          },
+          {
+            "nome": "Saúde e Nutrição",
+            "turmas": "Berçário ao N5"
+          }
+        ]
+      }
+    ],
+    "destaques": [
+      {
+        "titulo": "Programa de Inglês",
+        "texto": "Em parceria com o CNA, com uma abordagem dinâmica e envolvente, centrada na criança e na cultura maker. Para os Níveis 3, 4 e 5.",
+        "cor": "azul"
+      },
+      {
+        "titulo": "Robótica — Pequenos Inventores",
+        "texto": "Experiências de robótica e tecnologia de forma lúdica, prática e adequada à faixa etária, envolvendo Ciência, Tecnologia, Engenharia, Arte e Matemática, com incentivo à sustentabilidade e à reutilização de materiais.",
+        "cor": "verde"
+      }
+    ]
+  },
+  "chamada": {
+    "frase": "Venha nos visitar",
+    "titulo": "Conheça a Educação Infantil de perto.",
+    "texto": "Venha ver como as descobertas acontecem no dia a dia do Paraíso.",
+    "botao": "Agende uma visita",
+    "imagem": {
+      "src": "/img/menino-pintando.jpg",
+      "alt": "Menino pintando sobre o gramado.",
+      "foco": "centro",
+      "inteira": false
+    }
+  }
+}
