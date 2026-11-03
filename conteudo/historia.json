@@ -1,6 +1,6 @@
 {
   "seo": {
-    "titulo": "Nossa História | Escola Paraíso da Criança — Curitiba",
+    "titulo": "Nossa História | Escola Paraíso da Criança ",
     "descricao": "Desde 2002 dedicados à Primeira Infância. Conheça a trajetória, os valores e os 25 anos da Escola Paraíso da Criança, em Curitiba."
   },
   "topo": {
@@ -63,7 +63,6 @@
     "texto": "Em 2027, celebramos 25 anos de dedicação à Primeira Infância.\n\nMais do que recordar o caminho percorrido, celebramos as relações, as experiências e tudo o que continuamos construindo juntos.",
     "video": {
       "arquivo": "/videos/linha-do-tempo.mp4",
-      "youtube": "",
       "capa": "/img/video-capa.jpg"
     },
     "video_legenda": "Há mais de duas décadas, uma semente foi plantada.",
