@@ -136,7 +136,7 @@ P.inicio = () => {
     <div class="manifesto__media reveal">${Foto(m.imagem, { cls: "rimg--arch" })}<span class="semi drift" aria-hidden="true"></span>${m.selo ? `<span class="stamp" aria-hidden="true">${esc(m.selo)}</span>` : ""}</div>
   </div></section>
 
-  ${band(`${Heading(cm)}<div class="programs">${ProgramCard(cm.bercario, "#bercario", "pcard--bb")}${ProgramCard(cm.educacao, "#educacao-infantil", "pcard--edu")}</div>`)}
+  ${band(`${Heading(cm)}<div class="programs">${ProgramCard(cm.bercario, "#bercario", "pcard--bb")}${ProgramCard(cm.educacao, "#educacao-infantil", "pcard--edu")}</div>`, "band--red")}
 
   <section class="section"><div class="terr section"><div class="wrap">
     <div class="terr__head">
@@ -144,7 +144,7 @@ P.inicio = () => {
       <div class="lead reveal">${paras(t.texto)}</div>
     </div>
     <div class="mosaic reveal">${(t.imagens || []).slice(0, 5).map(i => `<div>${Foto(i)}</div>`).join("")}</div>
-    <div class="terr__foot reveal"><p class="script" style="font-size:1.15rem;margin:0;color:var(--green-dark)">${inline(t.frase)}</p>${btn(t.botao, "btn--red", "#territorios")}</div>
+    <div class="terr__foot reveal"><p class="script" style="margin:0;color:var(--green-dark)">${inline(t.frase)}</p>${btn(t.botao, "btn--red", "#territorios")}</div>
   </div></div></section>
 
   ${Editorial(h.proposta, { imgCls: "rimg--arch", extra: `<div class="btn-row">${btn(h.proposta.botao, "btn--ghost", "#proposta-pedagogica")}</div>` })}
@@ -189,7 +189,7 @@ P.historia = () => {
       ${ms.subtitulo ? `<h3 class="h3" style="margin-top:2rem">${tit(ms.subtitulo)}</h3>` : ""}${paras(ms.texto2)}</div>
   </div></section>
 
-  ${Editorial(h.inspira, { reverse: true, imgCls: "rimg--arch", extra: h.inspira.frase ? `<p class="script" style="font-size:1.1rem;margin-top:1.5rem">${inline(h.inspira.frase)}</p>` : "" })}
+  ${Editorial(h.inspira, { reverse: true, imgCls: "rimg--arch", extra: h.inspira.frase ? `<p class="script" style="margin-top:1.5rem">${inline(h.inspira.frase)}</p>` : "" })}
 
   <section class="section band"><div class="wrap">
     <div class="split" style="align-items:end">
