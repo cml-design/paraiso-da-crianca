@@ -11,14 +11,12 @@
     "endereco": "Rua Des. Ernani G. Cartaxo, 564 – Capão Raso, Curitiba – PR",
     "link_mapa": "https://www.google.com/maps/search/?api=1&query=Rua+Desembargador+Ernani+Guarita+Cartaxo+564+Capao+Raso+Curitiba",
     "instagram": "ceiparaisodacrianca",
-    "horario": "[HORÁRIO DE ATENDIMENTO A CONFIRMAR]"
+    "horario": "07h15 às 18h45"
   },
   "link_agendamento": "#contato",
-  "formulario_envio": "",
   "privacidade": {
     "razao_social": "[RAZÃO SOCIAL]",
     "cnpj": "[CNPJ]",
-    "encarregado": "",
     "prazo_guarda": "12 meses",
     "atualizada_em": "novembro de 2026"
   },
