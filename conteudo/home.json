@@ -1,11 +1,11 @@
 {
   "seo": {
-    "titulo": "Escola Paraíso da Criança | Educação Infantil e Berçário em Curitiba",
+    "titulo": "Escola Paraíso da Criança | Berçário e Educação Infantil ",
     "descricao": "Escola de Educação Infantil e Berçário em Curitiba, no Capão Raso. Natureza que inspira a infância, com mais de duas décadas dedicadas à Primeira Infância."
   },
   "banner": {
-    "frase": "Educação Infantil e Berçário em Curitiba",
-    "titulo": "Natureza que inspira a infância.",
+    "frase": "Berçário e Educação Infantil ",
+    "titulo": "Natureza que **inspira** a infância.",
     "texto": "Um lugar para descobrir o mundo, viver a liberdade de brincar e crescer cercado de experiências que fazem sentido.",
     "botao1": "Conheça o Paraíso",
     "botao2": "Agende uma visita",
@@ -14,10 +14,6 @@
       "alt": "Duas crianças agachadas na grama observam uma planta com uma lupa.",
       "foco": "topo",
       "inteira": false
-    },
-    "video": {
-      "arquivo": "",
-      "arquivo_celular": ""
     }
   },
   "manifesto": {
@@ -75,25 +71,21 @@
         "inteira": false
       },
       {
-        "src": "",
         "alt": "Ambiente externo da escola.",
         "foco": "centro",
         "inteira": false
       },
       {
-        "src": "",
         "alt": "Mãos de criança em experiência sensorial.",
         "foco": "centro",
         "inteira": false
       },
       {
-        "src": "",
         "alt": "Espaço de aprendizagem.",
         "foco": "centro",
         "inteira": false
       },
       {
-        "src": "",
         "alt": "Crianças em brincadeira livre.",
         "foco": "centro",
         "inteira": false
