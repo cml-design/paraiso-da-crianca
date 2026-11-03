@@ -1,0 +1,2273 @@
+# Configuração do painel de edição (Pages CMS — https://app.pagescms.org)
+# Não é preciso mexer neste arquivo para editar o site.
+media:
+- name: imagens
+  label: Imagens
+  input: img
+  output: /img
+  categories:
+  - image
+  rename: safe
+- name: videos
+  label: Vídeos
+  input: videos
+  output: /videos
+  categories:
+  - video
+  rename: safe
+content:
+- name: geral
+  label: Configurações gerais (contatos, links)
+  type: file
+  path: conteudo/geral.json
+  format: json
+  fields:
+  - name: escola
+    label: Escola
+    type: object
+    fields:
+    - name: nome
+      label: Nome
+      type: string
+    - name: slogan
+      label: Assinatura
+      type: string
+  - name: contato
+    label: Contatos
+    type: object
+    fields:
+    - name: telefone
+      label: Telefone (como aparece no site)
+      type: string
+    - name: whatsapp
+      label: WhatsApp (só números, com 55 e DDD)
+      type: string
+      description: 'Ex.: 554133477341'
+    - name: mensagem_whatsapp
+      label: Mensagem automática do WhatsApp
+      type: string
+    - name: email
+      label: E-mail
+      type: string
+    - name: endereco
+      label: Endereço
+      type: string
+    - name: link_mapa
+      label: Link do Google Maps
+      type: string
+    - name: instagram
+      label: Instagram (sem @)
+      type: string
+    - name: horario
+      label: Horário de atendimento
+      type: string
+      description: Deixe em branco para esconder.
+  - name: link_agendamento
+    label: Link do botão 'Agende uma visita'
+    type: string
+    description: 'Use #contato para ir à página de contato, ou cole um link externo de agendamento.'
+  - name: formulario_envio
+    label: Endereço de envio do formulário (técnico)
+    type: string
+    description: 'Ex.: endpoint do Formspree. Em branco, o formulário oferece o WhatsApp.'
+  - name: privacidade
+    label: Dados para a Política de Privacidade
+    type: object
+    fields:
+    - name: razao_social
+      label: Razão social
+      type: string
+    - name: cnpj
+      label: CNPJ
+      type: string
+    - name: encarregado
+      label: Encarregado(a) de dados (opcional)
+      type: string
+    - name: prazo_guarda
+      label: Prazo de guarda dos contatos
+      type: string
+    - name: atualizada_em
+      label: Data da última atualização
+      type: string
+  - name: mostrar_pendencias
+    label: Destacar textos [pendentes] em amarelo
+    type: boolean
+    description: Desligue antes de divulgar o site.
+- name: home
+  label: Página inicial
+  type: file
+  path: conteudo/home.json
+  format: json
+  fields:
+  - name: seo
+    label: Google (título e descrição da página)
+    type: object
+    fields:
+    - name: titulo
+      label: Título da aba / Google
+      type: string
+    - name: descricao
+      label: Descrição para o Google
+      type: text
+  - name: banner
+    label: Banner principal
+    type: object
+    fields:
+    - name: frase
+      label: Frase manuscrita
+      type: string
+    - name: titulo
+      label: Título
+      type: string
+      description: Use **duas estrelas** em volta de uma palavra para destacá-la em vermelho.
+    - name: texto
+      label: Texto
+      type: text
+      description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+    - name: botao1
+      label: Botão 1
+      type: string
+    - name: botao2
+      label: Botão 2
+      type: string
+    - name: imagem
+      label: Foto de fundo
+      type: object
+      fields:
+      - name: src
+        label: Foto
+        type: image
+        options:
+          media: imagens
+      - name: alt
+        label: Descrição da foto
+        type: string
+        description: Descreva a cena em uma frase (para acessibilidade e Google).
+      - name: foco
+        label: Enquadramento
+        type: select
+        description: Qual parte da foto deve aparecer quando ela for recortada.
+        options:
+          values:
+          - name: centro
+            label: Centro
+          - name: topo
+            label: Topo
+          - name: base
+            label: Base
+          - name: esquerda
+            label: Esquerda
+          - name: direita
+            label: Direita
+      - name: inteira
+        label: Mostrar a imagem inteira, sem recortar
+        type: boolean
+        description: Use para logos e ilustrações.
+    - name: video
+      label: Vídeo de fundo (opcional)
+      type: object
+      fields:
+      - name: arquivo
+        label: Vídeo MP4 (computador)
+        type: file
+        options:
+          media: videos
+      - name: arquivo_celular
+        label: Vídeo MP4 vertical (celular, opcional)
+        type: file
+        options:
+          media: videos
+      description: Sem som, em loop. Se vazio, aparece a foto.
+  - name: manifesto
+    label: Manifesto
+    type: object
+    fields:
+    - name: etiqueta
+      label: Etiqueta (texto pequeno acima do título)
+      type: string
+    - name: titulo
+      label: Título
+      type: string
+      description: Use **duas estrelas** em volta de uma palavra para destacá-la em vermelho.
+    - name: texto
+      label: Texto
+      type: text
+      description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+    - name: selo
+      label: Selo manuscrito sobre a foto
+      type: string
+    - name: imagem
+      label: Foto
+      type: object
+      fields:
+      - name: src
+        label: Foto
+        type: image
+        options:
+          media: imagens
+      - name: alt
+        label: Descrição da foto
+        type: string
+        description: Descreva a cena em uma frase (para acessibilidade e Google).
+      - name: foco
+        label: Enquadramento
+        type: select
+        description: Qual parte da foto deve aparecer quando ela for recortada.
+        options:
+          values:
+          - name: centro
+            label: Centro
+          - name: topo
+            label: Topo
+          - name: base
+            label: Base
+          - name: esquerda
+            label: Esquerda
+          - name: direita
+            label: Direita
+      - name: inteira
+        label: Mostrar a imagem inteira, sem recortar
+        type: boolean
+        description: Use para logos e ilustrações.
+  - name: caminhos
+    label: Nossos caminhos
+    type: object
+    fields:
+    - name: etiqueta
+      label: Etiqueta (texto pequeno acima do título)
+      type: string
+    - name: titulo
+      label: Título
+      type: string
+      description: Use **duas estrelas** em volta de uma palavra para destacá-la em vermelho.
+    - name: texto
+      label: Texto
+      type: text
+      description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+    - name: bercario
+      label: Cartão Berçário
+      type: object
+      fields:
+      - name: rotulo
+        label: Rótulo
+        type: string
+      - name: titulo
+        label: Título
+        type: string
+        description: Use **duas estrelas** em volta de uma palavra para destacá-la em vermelho.
+      - name: texto
+        label: Texto
+        type: text
+        description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+      - name: botao
+        label: Texto do botão
+        type: string
+      - name: imagem
+        label: Foto
+        type: object
+        fields:
+        - name: src
+          label: Foto
+          type: image
+          options:
+            media: imagens
+        - name: alt
+          label: Descrição da foto
+          type: string
+          description: Descreva a cena em uma frase (para acessibilidade e Google).
+        - name: foco
+          label: Enquadramento
+          type: select
+          description: Qual parte da foto deve aparecer quando ela for recortada.
+          options:
+            values:
+            - name: centro
+              label: Centro
+            - name: topo
+              label: Topo
+            - name: base
+              label: Base
+            - name: esquerda
+              label: Esquerda
+            - name: direita
+              label: Direita
+        - name: inteira
+          label: Mostrar a imagem inteira, sem recortar
+          type: boolean
+          description: Use para logos e ilustrações.
+    - name: educacao
+      label: Cartão Educação Infantil
+      type: object
+      fields:
+      - name: rotulo
+        label: Rótulo
+        type: string
+      - name: titulo
+        label: Título
+        type: string
+        description: Use **duas estrelas** em volta de uma palavra para destacá-la em vermelho.
+      - name: texto
+        label: Texto
+        type: text
+        description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+      - name: botao
+        label: Texto do botão
+        type: string
+      - name: imagem
+        label: Foto
+        type: object
+        fields:
+        - name: src
+          label: Foto
+          type: image
+          options:
+            media: imagens
+        - name: alt
+          label: Descrição da foto
+          type: string
+          description: Descreva a cena em uma frase (para acessibilidade e Google).
+        - name: foco
+          label: Enquadramento
+          type: select
+          description: Qual parte da foto deve aparecer quando ela for recortada.
+          options:
+            values:
+            - name: centro
+              label: Centro
+            - name: topo
+              label: Topo
+            - name: base
+              label: Base
+            - name: esquerda
+              label: Esquerda
+            - name: direita
+              label: Direita
+        - name: inteira
+          label: Mostrar a imagem inteira, sem recortar
+          type: boolean
+          description: Use para logos e ilustrações.
+  - name: territorios
+    label: Territórios (galeria)
+    type: object
+    fields:
+    - name: etiqueta
+      label: Etiqueta (texto pequeno acima do título)
+      type: string
+    - name: titulo
+      label: Título
+      type: string
+      description: Use **duas estrelas** em volta de uma palavra para destacá-la em vermelho.
+    - name: texto
+      label: Texto
+      type: text
+      description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+    - name: frase
+      label: Frase final
+      type: string
+    - name: botao
+      label: Texto do botão
+      type: string
+    - name: imagens
+      label: Fotos (até 5)
+      type: object
+      fields:
+      - name: src
+        label: Foto
+        type: image
+        options:
+          media: imagens
+      - name: alt
+        label: Descrição da foto
+        type: string
+        description: Descreva a cena em uma frase (para acessibilidade e Google).
+      - name: foco
+        label: Enquadramento
+        type: select
+        description: Qual parte da foto deve aparecer quando ela for recortada.
+        options:
+          values:
+          - name: centro
+            label: Centro
+          - name: topo
+            label: Topo
+          - name: base
+            label: Base
+          - name: esquerda
+            label: Esquerda
+          - name: direita
+            label: Direita
+      - name: inteira
+        label: Mostrar a imagem inteira, sem recortar
+        type: boolean
+        description: Use para logos e ilustrações.
+      list:
+        collapsible:
+          collapsed: true
+          summary: '{fields.alt}'
+  - name: proposta
+    label: Proposta pedagógica
+    type: object
+    fields:
+    - name: etiqueta
+      label: Etiqueta (texto pequeno acima do título)
+      type: string
+    - name: titulo
+      label: Título
+      type: string
+      description: Use **duas estrelas** em volta de uma palavra para destacá-la em vermelho.
+    - name: texto
+      label: Texto
+      type: text
+      description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+    - name: botao
+      label: Texto do botão
+      type: string
+    - name: imagem
+      label: Foto
+      type: object
+      fields:
+      - name: src
+        label: Foto
+        type: image
+        options:
+          media: imagens
+      - name: alt
+        label: Descrição da foto
+        type: string
+        description: Descreva a cena em uma frase (para acessibilidade e Google).
+      - name: foco
+        label: Enquadramento
+        type: select
+        description: Qual parte da foto deve aparecer quando ela for recortada.
+        options:
+          values:
+          - name: centro
+            label: Centro
+          - name: topo
+            label: Topo
+          - name: base
+            label: Base
+          - name: esquerda
+            label: Esquerda
+          - name: direita
+            label: Direita
+      - name: inteira
+        label: Mostrar a imagem inteira, sem recortar
+        type: boolean
+        description: Use para logos e ilustrações.
+  - name: historia
+    label: Nossa história
+    type: object
+    fields:
+    - name: etiqueta
+      label: Etiqueta (texto pequeno acima do título)
+      type: string
+    - name: ano
+      label: Ano em destaque
+      type: string
+    - name: ano_rotulo
+      label: Texto acima do ano
+      type: string
+    - name: titulo
+      label: Título
+      type: string
+      description: Use **duas estrelas** em volta de uma palavra para destacá-la em vermelho.
+    - name: texto
+      label: Texto
+      type: text
+      description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+    - name: selo_numero
+      label: Selo — número
+      type: string
+    - name: selo_texto
+      label: Selo — texto
+      type: string
+    - name: botao
+      label: Texto do botão
+      type: string
+    - name: imagem
+      label: Foto principal
+      type: object
+      fields:
+      - name: src
+        label: Foto
+        type: image
+        options:
+          media: imagens
+      - name: alt
+        label: Descrição da foto
+        type: string
+        description: Descreva a cena em uma frase (para acessibilidade e Google).
+      - name: foco
+        label: Enquadramento
+        type: select
+        description: Qual parte da foto deve aparecer quando ela for recortada.
+        options:
+          values:
+          - name: centro
+            label: Centro
+          - name: topo
+            label: Topo
+          - name: base
+            label: Base
+          - name: esquerda
+            label: Esquerda
+          - name: direita
+            label: Direita
+      - name: inteira
+        label: Mostrar a imagem inteira, sem recortar
+        type: boolean
+        description: Use para logos e ilustrações.
+    - name: imagem_detalhe
+      label: Foto redonda
+      type: object
+      fields:
+      - name: src
+        label: Foto
+        type: image
+        options:
+          media: imagens
+      - name: alt
+        label: Descrição da foto
+        type: string
+        description: Descreva a cena em uma frase (para acessibilidade e Google).
+      - name: foco
+        label: Enquadramento
+        type: select
+        description: Qual parte da foto deve aparecer quando ela for recortada.
+        options:
+          values:
+          - name: centro
+            label: Centro
+          - name: topo
+            label: Topo
+          - name: base
+            label: Base
+          - name: esquerda
+            label: Esquerda
+          - name: direita
+            label: Direita
+      - name: inteira
+        label: Mostrar a imagem inteira, sem recortar
+        type: boolean
+        description: Use para logos e ilustrações.
+  - name: chamada
+    label: Chamada final (bloco vermelho)
+    type: object
+    fields:
+    - name: frase
+      label: Frase manuscrita
+      type: string
+    - name: titulo
+      label: Título
+      type: string
+      description: Use **duas estrelas** em volta de uma palavra para destacá-la em vermelho.
+    - name: texto
+      label: Texto
+      type: text
+      description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+    - name: botao
+      label: Texto do botão
+      type: string
+    - name: imagem
+      label: Foto
+      type: object
+      fields:
+      - name: src
+        label: Foto
+        type: image
+        options:
+          media: imagens
+      - name: alt
+        label: Descrição da foto
+        type: string
+        description: Descreva a cena em uma frase (para acessibilidade e Google).
+      - name: foco
+        label: Enquadramento
+        type: select
+        description: Qual parte da foto deve aparecer quando ela for recortada.
+        options:
+          values:
+          - name: centro
+            label: Centro
+          - name: topo
+            label: Topo
+          - name: base
+            label: Base
+          - name: esquerda
+            label: Esquerda
+          - name: direita
+            label: Direita
+      - name: inteira
+        label: Mostrar a imagem inteira, sem recortar
+        type: boolean
+        description: Use para logos e ilustrações.
+- name: historia
+  label: Nossa História
+  type: file
+  path: conteudo/historia.json
+  format: json
+  fields:
+  - name: seo
+    label: Google (título e descrição da página)
+    type: object
+    fields:
+    - name: titulo
+      label: Título da aba / Google
+      type: string
+    - name: descricao
+      label: Descrição para o Google
+      type: text
+  - name: topo
+    label: Topo da página
+    type: object
+    fields:
+    - name: etiqueta
+      label: Etiqueta (texto pequeno acima do título)
+      type: string
+    - name: titulo
+      label: Título
+      type: string
+      description: Use **duas estrelas** em volta de uma palavra para destacá-la em vermelho.
+    - name: texto
+      label: Texto
+      type: text
+      description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+    - name: imagem
+      label: Foto
+      type: object
+      fields:
+      - name: src
+        label: Foto
+        type: image
+        options:
+          media: imagens
+      - name: alt
+        label: Descrição da foto
+        type: string
+        description: Descreva a cena em uma frase (para acessibilidade e Google).
+      - name: foco
+        label: Enquadramento
+        type: select
+        description: Qual parte da foto deve aparecer quando ela for recortada.
+        options:
+          values:
+          - name: centro
+            label: Centro
+          - name: topo
+            label: Topo
+          - name: base
+            label: Base
+          - name: esquerda
+            label: Esquerda
+          - name: direita
+            label: Direita
+      - name: inteira
+        label: Mostrar a imagem inteira, sem recortar
+        type: boolean
+        description: Use para logos e ilustrações.
+  - name: trajetoria
+    label: Nossa trajetória
+    type: object
+    fields:
+    - name: etiqueta
+      label: Etiqueta (texto pequeno acima do título)
+      type: string
+    - name: numero
+      label: Número em destaque
+      type: string
+    - name: numero_texto
+      label: Texto abaixo do número
+      type: string
+    - name: titulo
+      label: Título
+      type: string
+      description: Use **duas estrelas** em volta de uma palavra para destacá-la em vermelho.
+    - name: texto
+      label: Texto
+      type: text
+      description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+  - name: valores
+    label: Valores
+    type: object
+    fields:
+    - name: etiqueta
+      label: Etiqueta (texto pequeno acima do título)
+      type: string
+    - name: titulo
+      label: Título
+      type: string
+      description: Use **duas estrelas** em volta de uma palavra para destacá-la em vermelho.
+    - name: lista
+      label: Valores
+      type: string
+      list:
+        collapsible:
+          collapsed: true
+  - name: mascote
+    label: Nosso mascote
+    type: object
+    fields:
+    - name: etiqueta
+      label: Etiqueta (texto pequeno acima do título)
+      type: string
+    - name: titulo
+      label: Título
+      type: string
+      description: Use **duas estrelas** em volta de uma palavra para destacá-la em vermelho.
+    - name: texto
+      label: Texto
+      type: text
+      description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+    - name: subtitulo
+      label: Subtítulo
+      type: string
+    - name: texto2
+      label: Texto do subtítulo
+      type: text
+      description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+    - name: imagem
+      label: Imagem do mascote
+      type: object
+      fields:
+      - name: src
+        label: Foto
+        type: image
+        options:
+          media: imagens
+      - name: alt
+        label: Descrição da foto
+        type: string
+        description: Descreva a cena em uma frase (para acessibilidade e Google).
+      - name: foco
+        label: Enquadramento
+        type: select
+        description: Qual parte da foto deve aparecer quando ela for recortada.
+        options:
+          values:
+          - name: centro
+            label: Centro
+          - name: topo
+            label: Topo
+          - name: base
+            label: Base
+          - name: esquerda
+            label: Esquerda
+          - name: direita
+            label: Direita
+      - name: inteira
+        label: Mostrar a imagem inteira, sem recortar
+        type: boolean
+        description: Use para logos e ilustrações.
+  - name: inspira
+    label: O que nos inspira
+    type: object
+    fields:
+    - name: etiqueta
+      label: Etiqueta (texto pequeno acima do título)
+      type: string
+    - name: titulo
+      label: Título
+      type: string
+      description: Use **duas estrelas** em volta de uma palavra para destacá-la em vermelho.
+    - name: texto
+      label: Texto
+      type: text
+      description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+    - name: frase
+      label: Frase manuscrita
+      type: string
+    - name: imagem
+      label: Foto
+      type: object
+      fields:
+      - name: src
+        label: Foto
+        type: image
+        options:
+          media: imagens
+      - name: alt
+        label: Descrição da foto
+        type: string
+        description: Descreva a cena em uma frase (para acessibilidade e Google).
+      - name: foco
+        label: Enquadramento
+        type: select
+        description: Qual parte da foto deve aparecer quando ela for recortada.
+        options:
+          values:
+          - name: centro
+            label: Centro
+          - name: topo
+            label: Topo
+          - name: base
+            label: Base
+          - name: esquerda
+            label: Esquerda
+          - name: direita
+            label: Direita
+      - name: inteira
+        label: Mostrar a imagem inteira, sem recortar
+        type: boolean
+        description: Use para logos e ilustrações.
+  - name: aniversario
+    label: 25 anos e linha do tempo
+    type: object
+    fields:
+    - name: etiqueta
+      label: Etiqueta (texto pequeno acima do título)
+      type: string
+    - name: titulo
+      label: Título
+      type: string
+      description: Use **duas estrelas** em volta de uma palavra para destacá-la em vermelho.
+    - name: texto
+      label: Texto
+      type: text
+      description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+    - name: video
+      label: Vídeo da linha do tempo
+      type: object
+      fields:
+      - name: arquivo
+        label: Arquivo de vídeo (MP4)
+        type: file
+        options:
+          media: videos
+        description: 'Envie um MP4 comprimido (ideal: até 20 MB).'
+      - name: youtube
+        label: Ou link do YouTube
+        type: string
+        description: 'Opcional. Ex.: https://www.youtube.com/watch?v=XXXX — se preenchido, substitui o arquivo.'
+      - name: capa
+        label: Imagem de capa
+        type: image
+        options:
+          media: imagens
+    - name: video_legenda
+      label: Legenda do vídeo
+      type: string
+    - name: video_sublegenda
+      label: Texto abaixo da legenda
+      type: string
+    - name: marcos
+      label: Marcos da linha do tempo
+      type: object
+      fields:
+      - name: ano
+        label: Ano
+        type: string
+      - name: titulo
+        label: Título
+        type: string
+      - name: texto
+        label: Texto
+        type: text
+        description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+      - name: imagem
+        label: Foto
+        type: object
+        fields:
+        - name: src
+          label: Foto
+          type: image
+          options:
+            media: imagens
+        - name: alt
+          label: Descrição da foto
+          type: string
+          description: Descreva a cena em uma frase (para acessibilidade e Google).
+        - name: foco
+          label: Enquadramento
+          type: select
+          description: Qual parte da foto deve aparecer quando ela for recortada.
+          options:
+            values:
+            - name: centro
+              label: Centro
+            - name: topo
+              label: Topo
+            - name: base
+              label: Base
+            - name: esquerda
+              label: Esquerda
+            - name: direita
+              label: Direita
+        - name: inteira
+          label: Mostrar a imagem inteira, sem recortar
+          type: boolean
+          description: Use para logos e ilustrações.
+      list:
+        collapsible:
+          collapsed: true
+          summary: '{fields.ano} — {fields.titulo}'
+  - name: chamada
+    label: Chamada final (bloco vermelho)
+    type: object
+    fields:
+    - name: frase
+      label: Frase manuscrita
+      type: string
+    - name: titulo
+      label: Título
+      type: string
+      description: Use **duas estrelas** em volta de uma palavra para destacá-la em vermelho.
+    - name: texto
+      label: Texto
+      type: text
+      description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+    - name: botao
+      label: Texto do botão
+      type: string
+    - name: imagem
+      label: Foto
+      type: object
+      fields:
+      - name: src
+        label: Foto
+        type: image
+        options:
+          media: imagens
+      - name: alt
+        label: Descrição da foto
+        type: string
+        description: Descreva a cena em uma frase (para acessibilidade e Google).
+      - name: foco
+        label: Enquadramento
+        type: select
+        description: Qual parte da foto deve aparecer quando ela for recortada.
+        options:
+          values:
+          - name: centro
+            label: Centro
+          - name: topo
+            label: Topo
+          - name: base
+            label: Base
+          - name: esquerda
+            label: Esquerda
+          - name: direita
+            label: Direita
+      - name: inteira
+        label: Mostrar a imagem inteira, sem recortar
+        type: boolean
+        description: Use para logos e ilustrações.
+- name: bercario
+  label: Berçário
+  type: file
+  path: conteudo/bercario.json
+  format: json
+  fields:
+  - name: seo
+    label: Google (título e descrição da página)
+    type: object
+    fields:
+    - name: titulo
+      label: Título da aba / Google
+      type: string
+    - name: descricao
+      label: Descrição para o Google
+      type: text
+  - name: topo
+    label: Topo da página
+    type: object
+    fields:
+    - name: etiqueta
+      label: Etiqueta (texto pequeno acima do título)
+      type: string
+    - name: titulo
+      label: Título
+      type: string
+      description: Use **duas estrelas** em volta de uma palavra para destacá-la em vermelho.
+    - name: texto
+      label: Texto
+      type: text
+      description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+    - name: imagem
+      label: Foto
+      type: object
+      fields:
+      - name: src
+        label: Foto
+        type: image
+        options:
+          media: imagens
+      - name: alt
+        label: Descrição da foto
+        type: string
+        description: Descreva a cena em uma frase (para acessibilidade e Google).
+      - name: foco
+        label: Enquadramento
+        type: select
+        description: Qual parte da foto deve aparecer quando ela for recortada.
+        options:
+          values:
+          - name: centro
+            label: Centro
+          - name: topo
+            label: Topo
+          - name: base
+            label: Base
+          - name: esquerda
+            label: Esquerda
+          - name: direita
+            label: Direita
+      - name: inteira
+        label: Mostrar a imagem inteira, sem recortar
+        type: boolean
+        description: Use para logos e ilustrações.
+  - name: cuidar
+    label: Cuidar também é educar
+    type: object
+    fields:
+    - name: etiqueta
+      label: Etiqueta (texto pequeno acima do título)
+      type: string
+    - name: titulo
+      label: Título
+      type: string
+      description: Use **duas estrelas** em volta de uma palavra para destacá-la em vermelho.
+    - name: texto
+      label: Texto
+      type: text
+      description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+  - name: sentidos
+    label: Descobrir com todos os sentidos
+    type: object
+    fields:
+    - name: etiqueta
+      label: Etiqueta (texto pequeno acima do título)
+      type: string
+    - name: titulo
+      label: Título
+      type: string
+      description: Use **duas estrelas** em volta de uma palavra para destacá-la em vermelho.
+    - name: texto
+      label: Texto
+      type: text
+      description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+    - name: imagem
+      label: Foto
+      type: object
+      fields:
+      - name: src
+        label: Foto
+        type: image
+        options:
+          media: imagens
+      - name: alt
+        label: Descrição da foto
+        type: string
+        description: Descreva a cena em uma frase (para acessibilidade e Google).
+      - name: foco
+        label: Enquadramento
+        type: select
+        description: Qual parte da foto deve aparecer quando ela for recortada.
+        options:
+          values:
+          - name: centro
+            label: Centro
+          - name: topo
+            label: Topo
+          - name: base
+            label: Base
+          - name: esquerda
+            label: Esquerda
+          - name: direita
+            label: Direita
+      - name: inteira
+        label: Mostrar a imagem inteira, sem recortar
+        type: boolean
+        description: Use para logos e ilustrações.
+  - name: natureza
+    label: Natureza desde os primeiros encontros
+    type: object
+    fields:
+    - name: etiqueta
+      label: Etiqueta (texto pequeno acima do título)
+      type: string
+    - name: titulo
+      label: Título
+      type: string
+      description: Use **duas estrelas** em volta de uma palavra para destacá-la em vermelho.
+    - name: texto
+      label: Texto
+      type: text
+      description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+    - name: imagem
+      label: Foto
+      type: object
+      fields:
+      - name: src
+        label: Foto
+        type: image
+        options:
+          media: imagens
+      - name: alt
+        label: Descrição da foto
+        type: string
+        description: Descreva a cena em uma frase (para acessibilidade e Google).
+      - name: foco
+        label: Enquadramento
+        type: select
+        description: Qual parte da foto deve aparecer quando ela for recortada.
+        options:
+          values:
+          - name: centro
+            label: Centro
+          - name: topo
+            label: Topo
+          - name: base
+            label: Base
+          - name: esquerda
+            label: Esquerda
+          - name: direita
+            label: Direita
+      - name: inteira
+        label: Mostrar a imagem inteira, sem recortar
+        type: boolean
+        description: Use para logos e ilustrações.
+  - name: informacoes
+    label: Informações (períodos e cartões)
+    type: object
+    fields:
+    - name: etiqueta
+      label: Etiqueta (texto pequeno acima do título)
+      type: string
+    - name: titulo
+      label: Título
+      type: string
+      description: Use **duas estrelas** em volta de uma palavra para destacá-la em vermelho.
+    - name: texto
+      label: Texto
+      type: text
+      description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+    - name: periodos
+      label: Períodos
+      type: object
+      fields:
+      - name: nome
+        label: Nome
+        type: string
+      - name: detalhe
+        label: Horário e detalhes
+        type: string
+      list:
+        collapsible:
+          collapsed: true
+          summary: '{fields.nome}'
+    - name: observacao
+      label: Observação abaixo dos períodos
+      type: text
+    - name: cartoes
+      label: Cartões de informação
+      type: object
+      fields:
+      - name: titulo
+        label: Título
+        type: string
+      - name: texto
+        label: Texto
+        type: text
+        description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+      list:
+        collapsible:
+          collapsed: true
+          summary: '{fields.titulo}'
+  - name: familia
+    label: Escola e família
+    type: object
+    fields:
+    - name: etiqueta
+      label: Etiqueta (texto pequeno acima do título)
+      type: string
+    - name: titulo
+      label: Título
+      type: string
+      description: Use **duas estrelas** em volta de uma palavra para destacá-la em vermelho.
+    - name: texto
+      label: Texto
+      type: text
+      description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+  - name: chamada
+    label: Chamada final (bloco vermelho)
+    type: object
+    fields:
+    - name: frase
+      label: Frase manuscrita
+      type: string
+    - name: titulo
+      label: Título
+      type: string
+      description: Use **duas estrelas** em volta de uma palavra para destacá-la em vermelho.
+    - name: texto
+      label: Texto
+      type: text
+      description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+    - name: botao
+      label: Texto do botão
+      type: string
+    - name: imagem
+      label: Foto
+      type: object
+      fields:
+      - name: src
+        label: Foto
+        type: image
+        options:
+          media: imagens
+      - name: alt
+        label: Descrição da foto
+        type: string
+        description: Descreva a cena em uma frase (para acessibilidade e Google).
+      - name: foco
+        label: Enquadramento
+        type: select
+        description: Qual parte da foto deve aparecer quando ela for recortada.
+        options:
+          values:
+          - name: centro
+            label: Centro
+          - name: topo
+            label: Topo
+          - name: base
+            label: Base
+          - name: esquerda
+            label: Esquerda
+          - name: direita
+            label: Direita
+      - name: inteira
+        label: Mostrar a imagem inteira, sem recortar
+        type: boolean
+        description: Use para logos e ilustrações.
+- name: educacao_infantil
+  label: Educação Infantil
+  type: file
+  path: conteudo/educacao-infantil.json
+  format: json
+  fields:
+  - name: seo
+    label: Google (título e descrição da página)
+    type: object
+    fields:
+    - name: titulo
+      label: Título da aba / Google
+      type: string
+    - name: descricao
+      label: Descrição para o Google
+      type: text
+  - name: topo
+    label: Topo da página
+    type: object
+    fields:
+    - name: etiqueta
+      label: Etiqueta (texto pequeno acima do título)
+      type: string
+    - name: titulo
+      label: Título
+      type: string
+      description: Use **duas estrelas** em volta de uma palavra para destacá-la em vermelho.
+    - name: texto
+      label: Texto
+      type: text
+      description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+    - name: imagem
+      label: Foto
+      type: object
+      fields:
+      - name: src
+        label: Foto
+        type: image
+        options:
+          media: imagens
+      - name: alt
+        label: Descrição da foto
+        type: string
+        description: Descreva a cena em uma frase (para acessibilidade e Google).
+      - name: foco
+        label: Enquadramento
+        type: select
+        description: Qual parte da foto deve aparecer quando ela for recortada.
+        options:
+          values:
+          - name: centro
+            label: Centro
+          - name: topo
+            label: Topo
+          - name: base
+            label: Base
+          - name: esquerda
+            label: Esquerda
+          - name: direita
+            label: Direita
+      - name: inteira
+        label: Mostrar a imagem inteira, sem recortar
+        type: boolean
+        description: Use para logos e ilustrações.
+  - name: protagonista
+    label: A criança como protagonista
+    type: object
+    fields:
+    - name: etiqueta
+      label: Etiqueta (texto pequeno acima do título)
+      type: string
+    - name: titulo
+      label: Título
+      type: string
+      description: Use **duas estrelas** em volta de uma palavra para destacá-la em vermelho.
+    - name: texto
+      label: Texto
+      type: text
+      description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+    - name: imagem
+      label: Foto
+      type: object
+      fields:
+      - name: src
+        label: Foto
+        type: image
+        options:
+          media: imagens
+      - name: alt
+        label: Descrição da foto
+        type: string
+        description: Descreva a cena em uma frase (para acessibilidade e Google).
+      - name: foco
+        label: Enquadramento
+        type: select
+        description: Qual parte da foto deve aparecer quando ela for recortada.
+        options:
+          values:
+          - name: centro
+            label: Centro
+          - name: topo
+            label: Topo
+          - name: base
+            label: Base
+          - name: esquerda
+            label: Esquerda
+          - name: direita
+            label: Direita
+      - name: inteira
+        label: Mostrar a imagem inteira, sem recortar
+        type: boolean
+        description: Use para logos e ilustrações.
+  - name: brincar
+    label: Brincar é coisa séria
+    type: object
+    fields:
+    - name: etiqueta
+      label: Etiqueta (texto pequeno acima do título)
+      type: string
+    - name: titulo
+      label: Título
+      type: string
+      description: Use **duas estrelas** em volta de uma palavra para destacá-la em vermelho.
+    - name: texto
+      label: Texto
+      type: text
+      description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+  - name: cotidiano
+    label: Investigar, criar e conviver
+    type: object
+    fields:
+    - name: etiqueta
+      label: Etiqueta (texto pequeno acima do título)
+      type: string
+    - name: titulo
+      label: Título
+      type: string
+      description: Use **duas estrelas** em volta de uma palavra para destacá-la em vermelho.
+    - name: cartoes
+      label: Cartões
+      type: object
+      fields:
+      - name: titulo
+        label: Título
+        type: string
+      - name: texto
+        label: Texto
+        type: text
+        description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+      - name: cor
+        label: Cor
+        type: select
+        options:
+          values:
+          - azul
+          - laranja
+          - verde
+          - roxo
+          - amarelo
+          - vermelho
+          - rosa
+      - name: imagem
+        label: Foto
+        type: object
+        fields:
+        - name: src
+          label: Foto
+          type: image
+          options:
+            media: imagens
+        - name: alt
+          label: Descrição da foto
+          type: string
+          description: Descreva a cena em uma frase (para acessibilidade e Google).
+        - name: foco
+          label: Enquadramento
+          type: select
+          description: Qual parte da foto deve aparecer quando ela for recortada.
+          options:
+            values:
+            - name: centro
+              label: Centro
+            - name: topo
+              label: Topo
+            - name: base
+              label: Base
+            - name: esquerda
+              label: Esquerda
+            - name: direita
+              label: Direita
+        - name: inteira
+          label: Mostrar a imagem inteira, sem recortar
+          type: boolean
+          description: Use para logos e ilustrações.
+      list:
+        collapsible:
+          collapsed: true
+          summary: '{fields.titulo}'
+  - name: aulas
+    label: Aulas especiais
+    type: object
+    fields:
+    - name: etiqueta
+      label: Etiqueta (texto pequeno acima do título)
+      type: string
+    - name: titulo
+      label: Título
+      type: string
+      description: Use **duas estrelas** em volta de uma palavra para destacá-la em vermelho.
+    - name: texto
+      label: Texto
+      type: text
+      description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+    - name: turnos
+      label: Turnos
+      type: object
+      fields:
+      - name: nome
+        label: Turno
+        type: string
+      - name: atividades
+        label: Atividades
+        type: object
+        fields:
+        - name: nome
+          label: Atividade
+          type: string
+        - name: turmas
+          label: Turmas
+          type: string
+        list:
+          collapsible:
+            collapsed: true
+            summary: '{fields.nome}'
+      list:
+        collapsible:
+          collapsed: true
+          summary: '{fields.nome}'
+    - name: destaques
+      label: Destaques
+      type: object
+      fields:
+      - name: titulo
+        label: Título
+        type: string
+      - name: texto
+        label: Texto
+        type: text
+        description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+      - name: cor
+        label: Cor
+        type: select
+        options:
+          values:
+          - azul
+          - laranja
+          - verde
+          - roxo
+          - amarelo
+          - vermelho
+          - rosa
+      list:
+        collapsible:
+          collapsed: true
+          summary: '{fields.titulo}'
+  - name: chamada
+    label: Chamada final (bloco vermelho)
+    type: object
+    fields:
+    - name: frase
+      label: Frase manuscrita
+      type: string
+    - name: titulo
+      label: Título
+      type: string
+      description: Use **duas estrelas** em volta de uma palavra para destacá-la em vermelho.
+    - name: texto
+      label: Texto
+      type: text
+      description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+    - name: botao
+      label: Texto do botão
+      type: string
+    - name: imagem
+      label: Foto
+      type: object
+      fields:
+      - name: src
+        label: Foto
+        type: image
+        options:
+          media: imagens
+      - name: alt
+        label: Descrição da foto
+        type: string
+        description: Descreva a cena em uma frase (para acessibilidade e Google).
+      - name: foco
+        label: Enquadramento
+        type: select
+        description: Qual parte da foto deve aparecer quando ela for recortada.
+        options:
+          values:
+          - name: centro
+            label: Centro
+          - name: topo
+            label: Topo
+          - name: base
+            label: Base
+          - name: esquerda
+            label: Esquerda
+          - name: direita
+            label: Direita
+      - name: inteira
+        label: Mostrar a imagem inteira, sem recortar
+        type: boolean
+        description: Use para logos e ilustrações.
+- name: territorios
+  label: Territórios
+  type: file
+  path: conteudo/territorios.json
+  format: json
+  fields:
+  - name: seo
+    label: Google (título e descrição da página)
+    type: object
+    fields:
+    - name: titulo
+      label: Título da aba / Google
+      type: string
+    - name: descricao
+      label: Descrição para o Google
+      type: text
+  - name: topo
+    label: Topo da página
+    type: object
+    fields:
+    - name: etiqueta
+      label: Etiqueta (texto pequeno acima do título)
+      type: string
+    - name: titulo
+      label: Título
+      type: string
+      description: Use **duas estrelas** em volta de uma palavra para destacá-la em vermelho.
+    - name: texto
+      label: Texto
+      type: text
+      description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+    - name: imagem
+      label: Foto
+      type: object
+      fields:
+      - name: src
+        label: Foto
+        type: image
+        options:
+          media: imagens
+      - name: alt
+        label: Descrição da foto
+        type: string
+        description: Descreva a cena em uma frase (para acessibilidade e Google).
+      - name: foco
+        label: Enquadramento
+        type: select
+        description: Qual parte da foto deve aparecer quando ela for recortada.
+        options:
+          values:
+          - name: centro
+            label: Centro
+          - name: topo
+            label: Topo
+          - name: base
+            label: Base
+          - name: esquerda
+            label: Esquerda
+          - name: direita
+            label: Direita
+      - name: inteira
+        label: Mostrar a imagem inteira, sem recortar
+        type: boolean
+        description: Use para logos e ilustrações.
+  - name: educam
+    label: Os espaços também educam
+    type: object
+    fields:
+    - name: etiqueta
+      label: Etiqueta (texto pequeno acima do título)
+      type: string
+    - name: titulo
+      label: Título
+      type: string
+      description: Use **duas estrelas** em volta de uma palavra para destacá-la em vermelho.
+    - name: texto
+      label: Texto
+      type: text
+      description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+  - name: espacos
+    label: Nossos espaços (turmas)
+    type: object
+    fields:
+    - name: etiqueta
+      label: Etiqueta (texto pequeno acima do título)
+      type: string
+    - name: titulo
+      label: Título
+      type: string
+      description: Use **duas estrelas** em volta de uma palavra para destacá-la em vermelho.
+    - name: texto
+      label: Texto
+      type: text
+      description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+    - name: lista
+      label: Espaços
+      type: object
+      fields:
+      - name: nome
+        label: Nome
+        type: string
+      - name: faixa
+        label: Faixa etária
+        type: string
+      - name: texto
+        label: Descrição
+        type: text
+        description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+      - name: cor
+        label: Cor
+        type: select
+        options:
+          values:
+          - azul
+          - laranja
+          - verde
+          - roxo
+          - amarelo
+          - vermelho
+          - rosa
+      list:
+        collapsible:
+          collapsed: true
+          summary: '{fields.nome}'
+  - name: galeria
+    label: Galeria
+    type: object
+    fields:
+    - name: etiqueta
+      label: Etiqueta (texto pequeno acima do título)
+      type: string
+    - name: titulo
+      label: Título
+      type: string
+      description: Use **duas estrelas** em volta de uma palavra para destacá-la em vermelho.
+    - name: itens
+      label: Fotos da galeria
+      type: object
+      fields:
+      - name: titulo
+        label: Título
+        type: string
+      - name: texto
+        label: Legenda
+        type: text
+        description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+      - name: imagem
+        label: Foto
+        type: object
+        fields:
+        - name: src
+          label: Foto
+          type: image
+          options:
+            media: imagens
+        - name: alt
+          label: Descrição da foto
+          type: string
+          description: Descreva a cena em uma frase (para acessibilidade e Google).
+        - name: foco
+          label: Enquadramento
+          type: select
+          description: Qual parte da foto deve aparecer quando ela for recortada.
+          options:
+            values:
+            - name: centro
+              label: Centro
+            - name: topo
+              label: Topo
+            - name: base
+              label: Base
+            - name: esquerda
+              label: Esquerda
+            - name: direita
+              label: Direita
+        - name: inteira
+          label: Mostrar a imagem inteira, sem recortar
+          type: boolean
+          description: Use para logos e ilustrações.
+      list:
+        collapsible:
+          collapsed: true
+          summary: '{fields.titulo}'
+  - name: natureza
+    label: Natureza como experiência
+    type: object
+    fields:
+    - name: etiqueta
+      label: Etiqueta (texto pequeno acima do título)
+      type: string
+    - name: titulo
+      label: Título
+      type: string
+      description: Use **duas estrelas** em volta de uma palavra para destacá-la em vermelho.
+    - name: texto
+      label: Texto
+      type: text
+      description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+  - name: chamada
+    label: Chamada final (bloco vermelho)
+    type: object
+    fields:
+    - name: frase
+      label: Frase manuscrita
+      type: string
+    - name: titulo
+      label: Título
+      type: string
+      description: Use **duas estrelas** em volta de uma palavra para destacá-la em vermelho.
+    - name: texto
+      label: Texto
+      type: text
+      description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+    - name: botao
+      label: Texto do botão
+      type: string
+    - name: imagem
+      label: Foto
+      type: object
+      fields:
+      - name: src
+        label: Foto
+        type: image
+        options:
+          media: imagens
+      - name: alt
+        label: Descrição da foto
+        type: string
+        description: Descreva a cena em uma frase (para acessibilidade e Google).
+      - name: foco
+        label: Enquadramento
+        type: select
+        description: Qual parte da foto deve aparecer quando ela for recortada.
+        options:
+          values:
+          - name: centro
+            label: Centro
+          - name: topo
+            label: Topo
+          - name: base
+            label: Base
+          - name: esquerda
+            label: Esquerda
+          - name: direita
+            label: Direita
+      - name: inteira
+        label: Mostrar a imagem inteira, sem recortar
+        type: boolean
+        description: Use para logos e ilustrações.
+- name: proposta_pedagogica
+  label: Proposta Pedagógica
+  type: file
+  path: conteudo/proposta-pedagogica.json
+  format: json
+  fields:
+  - name: seo
+    label: Google (título e descrição da página)
+    type: object
+    fields:
+    - name: titulo
+      label: Título da aba / Google
+      type: string
+    - name: descricao
+      label: Descrição para o Google
+      type: text
+  - name: topo
+    label: Topo da página
+    type: object
+    fields:
+    - name: etiqueta
+      label: Etiqueta (texto pequeno acima do título)
+      type: string
+    - name: titulo
+      label: Título
+      type: string
+      description: Use **duas estrelas** em volta de uma palavra para destacá-la em vermelho.
+    - name: texto
+      label: Texto
+      type: text
+      description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+    - name: imagem
+      label: Foto
+      type: object
+      fields:
+      - name: src
+        label: Foto
+        type: image
+        options:
+          media: imagens
+      - name: alt
+        label: Descrição da foto
+        type: string
+        description: Descreva a cena em uma frase (para acessibilidade e Google).
+      - name: foco
+        label: Enquadramento
+        type: select
+        description: Qual parte da foto deve aparecer quando ela for recortada.
+        options:
+          values:
+          - name: centro
+            label: Centro
+          - name: topo
+            label: Topo
+          - name: base
+            label: Base
+          - name: esquerda
+            label: Esquerda
+          - name: direita
+            label: Direita
+      - name: inteira
+        label: Mostrar a imagem inteira, sem recortar
+        type: boolean
+        description: Use para logos e ilustrações.
+  - name: compreender
+    label: Nossa maneira de compreender a infância
+    type: object
+    fields:
+    - name: etiqueta
+      label: Etiqueta (texto pequeno acima do título)
+      type: string
+    - name: titulo
+      label: Título
+      type: string
+      description: Use **duas estrelas** em volta de uma palavra para destacá-la em vermelho.
+    - name: texto
+      label: Texto
+      type: text
+      description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+  - name: pilares
+    label: Pilares
+    type: object
+    fields:
+    - name: etiqueta
+      label: Etiqueta (texto pequeno acima do título)
+      type: string
+    - name: titulo
+      label: Título
+      type: string
+      description: Use **duas estrelas** em volta de uma palavra para destacá-la em vermelho.
+    - name: lista
+      label: Pilares
+      type: object
+      fields:
+      - name: titulo
+        label: Título
+        type: string
+      - name: texto
+        label: Texto
+        type: text
+        description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+      - name: cor
+        label: Cor
+        type: select
+        options:
+          values:
+          - azul
+          - laranja
+          - verde
+          - roxo
+          - amarelo
+          - vermelho
+          - rosa
+      list:
+        collapsible:
+          collapsed: true
+          summary: '{fields.titulo}'
+  - name: direitos
+    label: Direitos de aprendizagem
+    type: object
+    fields:
+    - name: etiqueta
+      label: Etiqueta (texto pequeno acima do título)
+      type: string
+    - name: titulo
+      label: Título
+      type: string
+      description: Use **duas estrelas** em volta de uma palavra para destacá-la em vermelho.
+    - name: texto
+      label: Texto
+      type: text
+      description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+    - name: lista
+      label: Direitos
+      type: string
+      list:
+        collapsible:
+          collapsed: true
+  - name: intencionalidade
+    label: Conhecimento e intencionalidade
+    type: object
+    fields:
+    - name: etiqueta
+      label: Etiqueta (texto pequeno acima do título)
+      type: string
+    - name: titulo
+      label: Título
+      type: string
+      description: Use **duas estrelas** em volta de uma palavra para destacá-la em vermelho.
+    - name: texto
+      label: Texto
+      type: text
+      description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+  - name: curriculo
+    label: Currículo e abordagens
+    type: object
+    fields:
+    - name: etiqueta
+      label: Etiqueta (texto pequeno acima do título)
+      type: string
+    - name: titulo
+      label: Título
+      type: string
+      description: Use **duas estrelas** em volta de uma palavra para destacá-la em vermelho.
+    - name: texto
+      label: Texto
+      type: text
+      description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+    - name: cartoes
+      label: Cartões
+      type: object
+      fields:
+      - name: titulo
+        label: Título
+        type: string
+      - name: texto
+        label: Texto
+        type: text
+        description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+      list:
+        collapsible:
+          collapsed: true
+          summary: '{fields.titulo}'
+    - name: imagem1
+      label: Foto alta
+      type: object
+      fields:
+      - name: src
+        label: Foto
+        type: image
+        options:
+          media: imagens
+      - name: alt
+        label: Descrição da foto
+        type: string
+        description: Descreva a cena em uma frase (para acessibilidade e Google).
+      - name: foco
+        label: Enquadramento
+        type: select
+        description: Qual parte da foto deve aparecer quando ela for recortada.
+        options:
+          values:
+          - name: centro
+            label: Centro
+          - name: topo
+            label: Topo
+          - name: base
+            label: Base
+          - name: esquerda
+            label: Esquerda
+          - name: direita
+            label: Direita
+      - name: inteira
+        label: Mostrar a imagem inteira, sem recortar
+        type: boolean
+        description: Use para logos e ilustrações.
+    - name: imagem2
+      label: Foto redonda
+      type: object
+      fields:
+      - name: src
+        label: Foto
+        type: image
+        options:
+          media: imagens
+      - name: alt
+        label: Descrição da foto
+        type: string
+        description: Descreva a cena em uma frase (para acessibilidade e Google).
+      - name: foco
+        label: Enquadramento
+        type: select
+        description: Qual parte da foto deve aparecer quando ela for recortada.
+        options:
+          values:
+          - name: centro
+            label: Centro
+          - name: topo
+            label: Topo
+          - name: base
+            label: Base
+          - name: esquerda
+            label: Esquerda
+          - name: direita
+            label: Direita
+      - name: inteira
+        label: Mostrar a imagem inteira, sem recortar
+        type: boolean
+        description: Use para logos e ilustrações.
+    - name: imagem3
+      label: Foto 3
+      type: object
+      fields:
+      - name: src
+        label: Foto
+        type: image
+        options:
+          media: imagens
+      - name: alt
+        label: Descrição da foto
+        type: string
+        description: Descreva a cena em uma frase (para acessibilidade e Google).
+      - name: foco
+        label: Enquadramento
+        type: select
+        description: Qual parte da foto deve aparecer quando ela for recortada.
+        options:
+          values:
+          - name: centro
+            label: Centro
+          - name: topo
+            label: Topo
+          - name: base
+            label: Base
+          - name: esquerda
+            label: Esquerda
+          - name: direita
+            label: Direita
+      - name: inteira
+        label: Mostrar a imagem inteira, sem recortar
+        type: boolean
+        description: Use para logos e ilustrações.
+  - name: chamada
+    label: Chamada final (bloco vermelho)
+    type: object
+    fields:
+    - name: frase
+      label: Frase manuscrita
+      type: string
+    - name: titulo
+      label: Título
+      type: string
+      description: Use **duas estrelas** em volta de uma palavra para destacá-la em vermelho.
+    - name: texto
+      label: Texto
+      type: text
+      description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+    - name: botao
+      label: Texto do botão
+      type: string
+    - name: imagem
+      label: Foto
+      type: object
+      fields:
+      - name: src
+        label: Foto
+        type: image
+        options:
+          media: imagens
+      - name: alt
+        label: Descrição da foto
+        type: string
+        description: Descreva a cena em uma frase (para acessibilidade e Google).
+      - name: foco
+        label: Enquadramento
+        type: select
+        description: Qual parte da foto deve aparecer quando ela for recortada.
+        options:
+          values:
+          - name: centro
+            label: Centro
+          - name: topo
+            label: Topo
+          - name: base
+            label: Base
+          - name: esquerda
+            label: Esquerda
+          - name: direita
+            label: Direita
+      - name: inteira
+        label: Mostrar a imagem inteira, sem recortar
+        type: boolean
+        description: Use para logos e ilustrações.
+- name: contato
+  label: Contato
+  type: file
+  path: conteudo/contato.json
+  format: json
+  fields:
+  - name: seo
+    label: Google (título e descrição da página)
+    type: object
+    fields:
+    - name: titulo
+      label: Título da aba / Google
+      type: string
+    - name: descricao
+      label: Descrição para o Google
+      type: text
+  - name: topo
+    label: Topo da página
+    type: object
+    fields:
+    - name: etiqueta
+      label: Etiqueta (texto pequeno acima do título)
+      type: string
+    - name: titulo
+      label: Título
+      type: string
+      description: Use **duas estrelas** em volta de uma palavra para destacá-la em vermelho.
+    - name: texto
+      label: Texto
+      type: text
+      description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+  - name: formulario
+    label: Formulário
+    type: object
+    fields:
+    - name: titulo
+      label: Título
+      type: string
+    - name: texto
+      label: Texto
+      type: text
+      description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+    - name: botao
+      label: Texto do botão
+      type: string
+    - name: faixas
+      label: Opções de idade
+      type: string
+      list:
+        collapsible:
+          collapsed: true
+    - name: sucesso
+      label: Mensagem após envio
+      type: text
+  - name: titulo_lateral
+    label: Título ao lado do formulário
+    type: string
+  - name: imagem
+    label: Foto (como chegar)
+    type: object
+    fields:
+    - name: src
+      label: Foto
+      type: image
+      options:
+        media: imagens
+    - name: alt
+      label: Descrição da foto
+      type: string
+      description: Descreva a cena em uma frase (para acessibilidade e Google).
+    - name: foco
+      label: Enquadramento
+      type: select
+      description: Qual parte da foto deve aparecer quando ela for recortada.
+      options:
+        values:
+        - name: centro
+          label: Centro
+        - name: topo
+          label: Topo
+        - name: base
+          label: Base
+        - name: esquerda
+          label: Esquerda
+        - name: direita
+          label: Direita
+    - name: inteira
+      label: Mostrar a imagem inteira, sem recortar
+      type: boolean
+      description: Use para logos e ilustrações.
+  - name: como_chegar
+    label: Título 'Como chegar'
+    type: string
+  - name: como_chegar_texto
+    label: Texto 'Como chegar'
+    type: string
+- name: privacidade
+  label: Política de Privacidade
+  type: file
+  path: conteudo/privacidade.json
+  format: json
+  fields:
+  - name: seo
+    label: Google (título e descrição da página)
+    type: object
+    fields:
+    - name: titulo
+      label: Título da aba / Google
+      type: string
+    - name: descricao
+      label: Descrição para o Google
+      type: text
+  - name: titulo
+    label: Título
+    type: string
+  - name: introducao
+    label: Introdução
+    type: text
+  - name: secoes
+    label: Seções
+    type: object
+    fields:
+    - name: titulo
+      label: Título da seção
+      type: string
+    - name: texto
+      label: Texto
+      type: text
+      description: Separe os parágrafos com uma linha em branco. Linhas começando com '- ' viram lista. Texto entre [colchetes] aparece marcado como pendente.
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{fields.titulo}'
