@@ -13,7 +13,7 @@
       "src": "/img/criancas-lupa.jpg",
       "alt": "Duas crianças agachadas na grama observam uma planta com uma lupa.",
       "foco": "topo",
-      "inteira": false
+      "inteira": true
     }
   },
   "manifesto": {
